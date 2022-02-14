@@ -1,0 +1,31 @@
+[{
+   "project_name": "Racoon",
+   "snapshot": "8 Feb 22",
+   "status": "Claimable",
+   "claim_start": "12 Feb 22",
+   "claim_end": "---",
+   "description": "Airdrop of `$RAC tokens to the community $RAC will grant access to unique AI generated NFTs on multiple Cosmos chains",
+   "link_refer": "https://cosmospug.com/racoon-airdrop/",
+   "icon": "staked.png"
+},
+{
+    "project_name": "Hansum",
+    "snapshot": "---",
+    "status": "---",
+    "claim_start": "---",
+    "claim_end": "---",
+    "description": "Airdrop of HANSUM tokens to the community",
+    "link_refer": "https://cosmospug.com/hansum-airdrop/",
+    "icon": "staked.png"
+ },
+ {
+    "project_name": "RAW",
+    "snapshot": "Early Feburary",
+    "status": "---",
+    "claim_start": "---",
+    "claim_end": "---",
+    "description": "$RAW will be the native asset of the Interchain #DEX JunoSwap alongside with $JUNO ",
+    "link_refer": "https://cosmospug.com/raw-airdrop/",
+    "icon": "staked.png"
+ }
+]

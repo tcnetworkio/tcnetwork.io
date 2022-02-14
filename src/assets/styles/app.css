@@ -589,6 +589,8 @@ section#portfolio a:hover {
 
 section#portfolio .card {
   padding: 30px;
+  padding-top: 70px;
+  padding-bottom: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -1626,4 +1628,155 @@ section#glossary .anchors a:hover {
     -ms-flex: 1;
     flex: 1
   }
+}
+
+.card {
+  flex-wrap: wrap;
+}
+
+.staking {
+  margin-top: 20px;
+  flex-basis: 100%;
+  text-align: center;
+}
+.single-stake-item {
+  background: #FFFFFF;
+  box-shadow: 0 20px 50px rgb(0 0 0 / 5%);
+  border-radius: 10px;
+  padding: 30px;
+  min-height: 330px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.stake-content {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.badge-corner-right {
+  position: absolute;
+  top: 5px;
+  margin-left: -20px;
+  box-sizing: border-box;
+}
+
+.badge-font {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.badge-success {
+  color: #fff;
+  background-color: #28a745;
+}
+
+.badge-pill {
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-radius: 10rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+
+.badge-corner-left {
+  position: absolute;
+  top: 35px;
+  margin-left: -18px;
+  box-sizing: border-box;
+}
+
+.badge-dark {
+  color: #fff;
+  background-color: #343a40;
+}
+
+.rounded-shape {
+  display: inline-block;
+  font-size: 50px;
+  color: #1E2845;
+  font-weight: 600;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  line-height: 100px;
+  background: #F5F5F5;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.stake-text {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.achieve {
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #778A99;
+}
+
+.achieve img {
+  width: 30px;
+  margin-right: 10px;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+.stake-content {
+  text-align: center;
+}
+
+.boxed-btn {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(42.76deg, #F87907 0%, #F87907 104.22%);
+  border-radius: 8px;
+  color: #fff;
+  width: 127px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  z-index: 1;
+  text-transform: capitalize;
+  transition: all 500ms ease;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.boxed-btn:hover {
+  background: linear-gradient(42.76deg, #28a745 0%, #28a745 104.22%);
+}
+
+.boxed-btn:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 100%;
+  background: linear-gradient(277.42deg, #C31F26 -0.72%, #EC3338 100%);
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 500ms ease;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
 }
