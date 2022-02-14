@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="97" height="90">
+    <defs>
+        <filter id="a">
+            <feFlood flood-color="#F87907" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+        <filter id="b">
+            <feFlood flood-color="#F87907" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+        <filter id="c">
+            <feFlood flood-color="#F87907" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+        <filter id="d">
+            <feFlood flood-color="#F87907" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+        <filter id="e">
+            <feFlood flood-color="#F87907" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+        <filter id="f">
+            <feFlood flood-color="#F87907" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+        <filter id="g">
+            <feFlood flood-color="#F87907" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+        <filter id="h">
+            <feFlood flood-color="#F87907" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+        <filter id="i">
+            <feFlood flood-color="#F87907" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+        <filter id="j">
+            <feFlood flood-color="#FEFEFF" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+        <filter id="k">
+            <feFlood flood-color="#FEFEFF" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <path fill="#013AB7" fill-rule="evenodd" d="M41.679 36.282L97 67.336 56.077 90 .757 58.947l40.922-22.665z" filter="url(#a)"/>
+    <path fill="#4542E0" fill-rule="evenodd" d="M.75 56.656h3.625v1.75H.75v-1.75zM93.375 64.938H97v1.718h-3.625v-1.718z"/>
+    <path fill="#013AB7" fill-rule="evenodd" d="M68.202 48.274L97 64.074 56.077 86.738 27.28 70.939l40.922-22.665z" filter="url(#b)"/>
+    <path fill="#013AB7" fill-rule="evenodd" d="M40.921 33.324l27.282 15.037-40.922 22.664L-.001 55.989l40.922-22.665z" filter="url(#c)"/>
+    <path fill="#DFECF8" fill-rule="evenodd" d="M41.61 34.541L64.935 47.58 27.969 68.246 4.644 55.207 41.61 34.541z" filter="url(#d)"/>
+    <path fill="#DFECF8" fill-rule="evenodd" d="M68.203 49.144l24.841 13.801-36.966 20.666L31.237 69.81l36.966-20.666z" filter="url(#e)"/>
+    <path fill="#DFECF8" fill-rule="evenodd" d="M41.61 31.589l23.325 13.039-36.966 20.666L4.644 52.255 41.61 31.589z" filter="url(#f)"/>
+    <path fill="#6292FC" fill-rule="evenodd" d="M29.099 59.563l2.923 1.537v7.295l-2.923-1.538v-7.294z" filter="url(#g)"/>
+    <path fill="#DFECF8" fill-rule="evenodd" d="M68.203 46.192l24.841 13.801-36.966 20.665-24.841-13.801 36.966-20.665z" filter="url(#h)"/>
+    <path fill="#6292FC" fill-rule="evenodd" d="M47.656 34.209l34.815 19.102-34.815 19.102-34.815-19.102 34.815-19.102z" filter="url(#i)"/>
+    <path fill="#DFECF8" fill-rule="evenodd" d="M41.61 28.984l23.325 13.038-36.966 20.667L4.644 49.65 41.61 28.984z" filter="url(#j)"/>
+    <path fill="#DFECF8" fill-rule="evenodd" d="M68.203 43.586l24.841 13.802-36.966 20.666-24.841-13.801 36.966-20.667z" filter="url(#k)"/>
+    <path fill="#F87907" fill-rule="evenodd" d="M56.844 30.104v3.884a7.2 7.2 0 0 1-7.199 7.2h-.008a7.2 7.2 0 0 1-7.199-7.2v-3.521a16.008 16.008 0 0 1-9.094-14.451C33.344 7.17 40.472 0 49.266 0c8.793 0 15.921 7.17 15.921 16.016a16.027 16.027 0 0 1-8.343 14.088z"/>
+    <path fill="#FFF" fill-rule="evenodd" d="M45.469 18.312H47v17.532h-1.531V18.312zM51.531 18.312h1.531v17.532h-1.531V18.312z"/>
+    <path fill="#817FFF" fill-rule="evenodd" d="M45 2c6.075 0 11 4.925 11 11s-4.925 11-11 11-11-4.925-11-11S38.925 2 45 2z" opacity=".49"/>
+    <path fill="#F87907" fill-rule="evenodd" d="M42.438 31.281h14.406v9.907H42.438v-9.907z"/>
+    <path fill="#817FFF" fill-rule="evenodd" d="M42.438 35.094h14.406V38.5a6.5 6.5 0 0 1-6.5 6.5h-1.406a6.5 6.5 0 0 1-6.5-6.5v-3.406z"/>
+</svg>

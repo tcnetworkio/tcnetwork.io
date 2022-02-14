@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Dig Chain",
+    "link": "https://look.chillvalidation.com/dig/staking/digvaloper1sqcn85px4dtmdjlvfraqn0fq332020akrh8mst",
+    "status": "Mainnet",
+    "logo": "dig.png"
+  },
+  {
+    "name": "Odin",
+    "link": "https://look.chillvalidation.com/odin/staking/odinvaloper1zacxcup2nd644j5gum2a5j4m4en2nc08c9x82x",
+    "status": "Mainnet",
+    "logo": "odin.jpg"
+  },
+  {
+    "name": "Gravity Bridge",
+    "link": "https://ping.pub/gravity-bridge/staking/gravityvaloper1r86604phsp5d2ghrrupgv3ef6fnd2emuu53zyl",
+    "status": "Mainnet",
+    "logo": "gravity_bridge.png"
+  },
+  {
+    "name": "Chihuahua",
+    "link": "https://ping.pub/chihuahua/staking",
+    "status": "Mainnet",
+    "logo": "chihuahua.png"
+  },
+  {
+    "name": "Nomic",
+    "link": "https://staging.nomic.io",
+    "status": "Mainnet",
+    "logo": "nomic.jpg"
+  },
+  {
+    "name": "Game",
+    "link": "https://gamenet.one",
+    "status": "Mainnet",
+    "logo": "game.png"
+  },
+  {
+    "name": "Anone",
+    "link": "https://another-1.io",
+    "status": "Testnet",
+    "logo": "anone.jpg"
+  },
+  {
+    "name": "Agoric",
+    "link": "https://agoric.com",
+    "status": "Testnet",
+    "logo": "agoric.png"
+  },
+  {
+    "name": "Certik",
+    "link": "https://www.shentu.technology",
+    "status": "Comming Soon",
+    "logo": "certik.jpg"
+  }
+]

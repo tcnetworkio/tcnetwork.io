@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="73" height="90">
+    <defs>
+        <filter id="a">
+            <feFlood flood-color="#F87907" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+        <filter id="b">
+            <feFlood flood-color="#FFF" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+        <filter id="c">
+            <feFlood flood-color="#FFF" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+        <filter id="d">
+            <feFlood flood-color="#D6D6F7" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <path fill="#A9A7F9" fill-rule="evenodd" d="M13.061.301l53.783 17.364c3.4 1.098 6.156 4.858 6.156 8.398v56.008c0 3.54-2.756 5.52-6.156 4.423L13.061 69.129c-3.4-1.097-6.156-4.858-6.156-8.398V4.724c0-3.541 2.756-5.521 6.156-4.423z" filter="url(#a)"/>
+    <path fill="#FFF" fill-rule="evenodd" d="M13.431 14.094l35.367 11.537v6.848L13.431 20.942v-6.848z"/>
+    <path fill="#FFF" fill-opacity="0" fill-rule="evenodd" stroke="#FFF" d="M13.431 25.834L48.798 37.37v6.847L13.431 32.682v-6.848zM13.431 34.833L48.798 46.37v6.847L13.431 41.681v-6.848z"/>
+    <path fill-rule="evenodd" d="M13.48 56.383a.696.696 0 0 1-.1-.332c0-.086.033-.205.1-.27l.464-.459c.132-.13.331-.068.464.146l.033.053 1.824 3.108c.066.107.166.138.232.073l4.444-4.598.033.01c.132-.131.331-.069.464.145l.464.747c.133.214.133.472 0 .603L16.597 61.1c-.067.066-.133.088-.233.057-.099-.031-.165-.095-.232-.202l-2.586-4.422-.066-.15z" filter="url(#b)"/>
+    <path fill-rule="evenodd" d="M43.761 65.533c-.065-.107-.065-.232 0-.293l2.443-2.284a.384.384 0 0 0 .098-.259.703.703 0 0 0-.098-.328l-.456-.749a.508.508 0 0 0-.228-.206c-.098-.034-.163-.016-.228.046l-2.443 2.284c-.065.06-.163.025-.228-.081l-2.443-4.008a.51.51 0 0 0-.228-.207.236.236 0 0 0-.228.046l-.456.427c-.065.06-.097.174-.097.258a.7.7 0 0 0 .097.328l2.443 4.008c.065.107.065.233 0 .294l-2.443 2.284a.383.383 0 0 0-.097.259c0 .084.032.221.097.328l.456.749a.504.504 0 0 0 .228.205.233.233 0 0 0 .228-.045l2.443-2.283c.065-.061.163-.027.228.08l2.443 4.008a.508.508 0 0 0 .228.206.233.233 0 0 0 .228-.045l.456-.427a.381.381 0 0 0 .098-.258.71.71 0 0 0-.098-.329l-2.443-4.008z" filter="url(#c)"/>
+    <path fill="#A9A7F9" fill-rule="evenodd" d="M6.158 3.506L59.941 20.87c3.4 1.098 6.156 4.858 6.156 8.398v56.008c0 3.541-2.756 5.521-6.156 4.424L6.158 72.335c-3.4-1.098-6.156-4.858-6.156-8.398V7.929c0-3.54 2.756-5.52 6.156-4.423z" filter="url(#d)" opacity=".6"/>
+</svg>

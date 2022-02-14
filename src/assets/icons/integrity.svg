@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="70">
+    <defs>
+        <filter id="a">
+            <feFlood flood-color="#F87907" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+        <filter id="b">
+            <feFlood flood-color="#F87907" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <path fill="#F87907" fill-rule="evenodd" d="M11.098 31.242c13.894-9.715 35.458-10.7 48.164-2.2 12.706 8.5 11.742 23.267-2.152 32.982-13.895 9.715-35.458 10.7-48.164 2.2-12.706-8.5-11.743-23.267 2.152-32.982z" filter="url(#a)"/>
+    <path fill="#F87907" fill-rule="evenodd" d="M.75 42.969h6.156v11.625H.75V42.969zM61.375 36.531h6.156v11.594h-6.156V36.531z"/>
+    <path fill="#F87907" fill-rule="evenodd" d="M11.098 24.988c13.894-9.715 35.458-10.699 48.164-2.199 12.706 8.5 11.742 23.266-2.152 32.981-13.895 9.715-35.458 10.7-48.164 2.2-12.706-8.5-11.743-23.267 2.152-32.982z"/>
+    <path fill="#FFF" fill-rule="evenodd" d="M17.855 29.206c9.833-6.672 25.093-7.348 34.085-1.51s8.31 15.98-1.523 22.652c-9.833 6.672-25.093 7.349-34.085 1.511s-8.31-15.98 1.523-22.653z" filter="url(#b)"/>
+    <path fill="#FFF" fill-rule="evenodd" d="M17.855 34.534c9.833-5.338 25.093-5.88 34.085-1.209 8.992 4.67 8.31 12.784-1.523 18.122-9.833 5.338-25.093 5.879-34.085 1.209-8.992-4.671-8.31-12.785 1.523-18.122z"/>
+    <path fill="#F87907" fill-rule="evenodd" d="M59.873 53.436l23.935 6.75v6.609l-23.935-6.75v-6.609z"/>
+    <path fill="#F87907" fill-rule="evenodd" d="M83.808 60.341L90 55.053v6.908l-6.192 5.289v-6.909z"/>
+    <path fill="#F87907" fill-rule="evenodd" d="M58.555 46.061l31.437 9.114-6.428 5.472-31.437-9.115 6.428-5.471z"/>
+    <path fill="#F87907" fill-rule="evenodd" d="M62.983 46.321l4.856 1.717-1.035 4.53-4.857-1.717 1.036-4.53z"/>
+    <path fill="#F87907" fill-rule="evenodd" d="M11.098 7.988c13.894-9.715 35.458-10.7 48.164-2.2 12.706 8.501 11.742 23.267-2.152 32.982-13.895 9.716-35.458 10.7-48.164 2.2-12.706-8.5-11.743-23.266 2.152-32.982z" opacity=".271"/>
+</svg>
