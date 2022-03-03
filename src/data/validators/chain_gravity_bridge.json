@@ -1,0 +1,15 @@
+{
+  "name": "Gravity Bridge",
+  "logo": "gravity_bridge.png",
+  "url": "https://www.gravitybridge.net/",
+
+  "address": "https://ping.pub/gravity-bridge/staking/gravityvaloper1r86604phsp5d2ghrrupgv3ef6fnd2emuu53zyl",
+  "status": "Mainnet",
+  "uptime": "100",
+  "commision": "5",
+
+  "apr": "999",
+  "price": "100",
+  "staked_user": "1000",
+  "staked_amount": "999999999"
+}

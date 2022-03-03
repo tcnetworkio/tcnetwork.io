@@ -8,19 +8,19 @@ const menus = [
     path: '/',
   },
   {
-    title: 'Stake',
-    path: '/stake',
-  },
-  {
-    title: 'Airdrop',
+    title: 'Airdrops',
     path: '/airdrop',
   },
   {
-    title: 'Validator',
+    title: 'Staking',
+    path: '/stake',
+  },
+  {
+    title: 'Validators',
     path: '/validator',
   },
   {
-    title: 'About',
+    title: 'About Us',
     path: '/about',
   },
 ];

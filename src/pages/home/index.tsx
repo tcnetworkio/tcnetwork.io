@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import LogoIcon from '../../assets/icons/logo.svg';
+import CosmosIcon from '../../assets/icons/cosmos.png';
 import SecurityIcon from '../../assets/icons/security.svg';
 import BlockIcon from '../../assets/icons/block.svg';
 import EducationIcon from '../../assets/icons/education.svg';
@@ -10,48 +11,47 @@ import portfolioList from '../../data/portfolio.json';
 
 export const HomePage: FC<any> = (props) => (
   <div className="home">
-    <section id="intro">
+     <section id="intro">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
             <h1>
-              Staking crypto tokens made simple
+            Cosmos Airdrops
             </h1>
             <h2>
-              Choose us to be your validator!
+            Information about cosmos airdrops. Often updates!
             </h2>
             <p>
-              We are a team of tech-savvy blockchain developers and enthusiasts who run nodes on PoS and PoA
-              blockchains. We took care all of the technical setup needed so that you could easily stake your
-              assets.
+            With the huge amount of current and upcoming airdrops on the cosmos ecosystem it can be impossible to keep up with all the emerging information.
+            Here you will find a compiled list of all currently claimable, upcoming, rumoured, and expired airdrops.
             </p>
           </div>
           <div className="col-lg-6 d-flex align-items-center"><img src="assets/icons/process.svg" alt="" className="img-fluid" />
           </div>
-        </div> <a href="https://look.chillvalidation.com/dig/staking/digvaloper1sqcn85px4dtmdjlvfraqn0fq332020akrh8mst" target="_blank" rel="noreferrer" className="btn btn-primary btn-lg">Staking Now</a>
+        </div> <a href="/airdrop" rel="noreferrer" className="btn btn-primary btn-lg">Check Airdrops</a>
       </div>
     </section>
+
     <section id="about" style={{ paddingTop: 0 }}>
       <div className="container">
         <div className="row d-flex align-items-center">
-          <div className="col-lg-6 order-2 order-lg-0"><img src={LogoIcon} width={215} height={200} alt="" className="d-inline-block align-top" /></div>
+          <div className="col-lg-6 order-2 order-lg-0"><img src={CosmosIcon} width={400} height={300}  className="d-inline-block align-top" /></div>
           <div className="col-lg-6 order-0 order-lg-2">
-            <h3>About Us</h3>
-            <p>TC NETWORK is a unique team of highly trained professionals specialized in operating validator
-              nodes
-              and based in Seattle, Washington. We have a proven track record as an infrastructure operator
-              for PoA and PoS networks.
-              We believe that these technologies will form the next significant chapter
-              in the blockchain revolution. Our mission is to help retail and institutional investors stake
-              their crypto assets and earn rewards while we do
-              all the hard work.</p>
+            <h3>Staking on Cosmos Network made SIMPLE</h3>
+            <p>Cosmos: The Internet of Blockchains!
+              <br></br>Cosmos is an ever-expanding ecosystem of interoperable and sovereign blockchain apps and services, built for a decentralized future.
+             <br></br>TC Network is a group of technical developers participating in #Cosmos blockchains, providing staking services, building dApps and supporting Cosmos projects.</p>
+              <br></br>
+              <a href="/stake" rel="noreferrer" className="btn btn-primary btn-lg">Staking Now</a>
           </div>
         </div>
+        
       </div>
     </section>
+
     <section id="portfolio">
       <div className="container">
-        <h3>Portfolio</h3>
+        <h3>Portfolio | Joined as the Validator!</h3>
         <div className="row">
           {portfolioList.map((e, i) => (
             <div key={i} className="col-md-6 col-lg-6 col-xl-4">
@@ -157,67 +157,25 @@ export const HomePage: FC<any> = (props) => (
         </div>
       </div>
     </section>
-    <section id="features">
+
+    <section id="about" style={{ paddingTop: 0 }}>
       <div className="container">
-        <h3>Technical Features</h3>
-        <div className="row pt-0 d-flex align-items-center">
-          <div className="col-lg-6 order-2 order-lg-0 d-flex justify-content-center align-items-center"><img src="asset/img/technical_feature.svg" alt="" className="img-fluid" /></div>
-          <div className="col-lg-6 order-0 order-lg-2">
-            <h4>Cosmos validator</h4>
-            <p>
-              We are operating one of the genesis validators for the cosmos network
-              and have been participating in testnet ecosystem since gaia-5000.
-              We were one of the 27 validators (out of 200) who has never been
-              jailed during the Game of Stakes. Our Validator node can’t be accessed
-              from the internet and protected by layers of private and public sentries
-              located around the world.
-            </p>
-          </div>
-        </div>
         <div className="row d-flex align-items-center">
-          <div className="col-lg-6">
-            <h4>Infrastructure</h4>
-            <p>
-              Best-in-class network connectivity for speed and throughput.
-              Automatic system-level backups at regular intervals.
-              Redundant validator server setup is available to switch at the moment’s notice.
-              Multiple data replications across different racks, reducing the chances
-              of data loss in case of hardware failure.
-              All of the access points protected by multi-factor authentication (MFA).
-            </p>
-            <p>
-              Key management.
-            </p>
-            <p>
-              We plan to utilize multisig wallet setup as well as recurring key rotation once
-              functionality becomes available.
-            </p>
-          </div>
-          <div className="col-lg-6 d-flex justify-content-center align-items-center"><img src="asset/img/infrastructure.svg" alt="" className="img-fluid" /></div>
-        </div>
-        <div className="row pb-0 d-flex align-items-center">
-          <div className="col-lg-6 order-2 order-lg-0 d-flex justify-content-center align-items-center"><img src="asset/img/delegation.svg" alt="" className="img-fluid" /></div>
+          <div className="col-lg-6 order-2 order-lg-0"><img src={LogoIcon} width={215} height={200} alt="" className="d-inline-block align-top" /></div>
           <div className="col-lg-6 order-0 order-lg-2">
-            <h4>Delegation</h4>
-            <p>
-              After the Cosmos mainnet launch, you will be able to stake atoms
-              with our validator as a third-party delegator:
-            </p>
-            <p>
-              Atoms Delegated: 1,711,492
-            </p>
-            <p>
-              Commission rate: 7%
-            </p>
+            <h3>About Us</h3>
+            <p>We are a group of blockchain developers and enthusiasts who run nodes on Proof-of-Stake (PoS) blockchains. We're using the Cosmos Network Airdrop Program to collect and share the latest news from the Cosmos Network. We took care of all the technical setup so you could start staking your assets right away. We also help the Cosmos community by learning and building on the Cosmos SDK.</p>
           </div>
         </div>
+        
       </div>
     </section>
+    
     <section id="contact">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <h3>Contact us</h3>
+            <h3>Connect Us</h3>
             <p>
               Reach out to us if you have any questions
               or need help with delegation instructions.
@@ -225,7 +183,7 @@ export const HomePage: FC<any> = (props) => (
           </div>
           <div className="col-lg-6">
             <div className="row justify-content-end mailbox">
-              <div className="col-lg-8"><a href="https://t.me/tcnetworkannoucement" target="_blank" rel="noreferrer"><button type="button" className="btn btn-primary btn-lg">MESSAGE NOW</button></a>
+              <div className="col-lg-8"><a href="https://t.me/tcnetwork_io" target="_blank" rel="noreferrer"><button type="button" className="btn btn-primary btn-lg">Get in touch with us!</button></a>
               </div>
             </div>
           </div>

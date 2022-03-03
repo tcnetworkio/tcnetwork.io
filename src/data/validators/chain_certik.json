@@ -1,0 +1,15 @@
+{
+  "name": "Certik",
+  "logo": "certik.jpg",
+  "url": "https://www.shentu.technology/",
+
+  "address": "https://ping.pub/certik/staking/certikvaloper1lzucj7228hu5ysh5txmq3z9kf5vh4tjlztqfaf",
+  "status": "Mainnet",
+  "uptime": "100",
+  "commision": "5",
+
+  "apr": "999",
+  "price": "100",
+  "staked_user": "1000",
+  "staked_amount": "999999999"
+}

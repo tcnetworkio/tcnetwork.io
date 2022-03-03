@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import airdrops from '../../data/airdrops.json';
+import airdrops from '../../data//airdrops/airdrops.json';
 
 export const AirdropPage: FC<any> = (props) => (
   <div className="home">

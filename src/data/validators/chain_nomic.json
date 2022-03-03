@@ -1,0 +1,15 @@
+{
+  "name": "Nomic",
+  "logo": "nomic.jpg",
+  "url": "https://nomic.io/",
+
+  "address": "https://staging.nomic.io",
+  "status": "Mainnet",
+  "uptime": "100",
+  "commision": "5",
+
+  "apr": "999",
+  "price": "100",
+  "staked_user": "1000",
+  "staked_amount": "999999999"
+}
