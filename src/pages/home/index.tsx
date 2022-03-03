@@ -53,7 +53,14 @@ export const HomePage: FC<any> = (props) => (
       <div className="container">
         <h3>Portfolio | Joined as the Validator!</h3>
         <div className="row">
-          {portfolioList.map((e, i) => (
+          {
+          // Purpose >>>> get all json file from directory and display them
+          
+          // Step1: Get JSON file from /data/validator folder
+          // Step2: Loop through the JSON file and get content data then add into the portfolioList array
+          // Step3: Display the portfolioList array
+          
+          portfolioList.map((e, i) => (
             <div key={i} className="col-md-6 col-lg-6 col-xl-4">
               <a href={e.home_page} target="_blank" rel="noreferrer">
                 <div className={`card ${e.name.length > 8 ? 'pr-0' : ''}`}>
