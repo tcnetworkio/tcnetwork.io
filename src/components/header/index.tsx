@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import LogoIcon from '../../assets/icons/logo.svg';
 import { NavLink } from 'react-router-dom';
+import { Link } from "react-scroll";
 
 const menus = [
   {
@@ -13,15 +14,18 @@ const menus = [
   },
   {
     title: 'Staking',
-    path: '/stake',
+    name: 'scroll-staking',
+    scroll: true,
   },
   {
     title: 'Validators',
-    path: '/validator',
+    name: 'scroll-validator',
+    scroll: true,
   },
   {
     title: 'About Us',
-    path: '/about',
+    name: 'scroll-about',
+    scroll: true,
   },
 ];
 
@@ -38,16 +42,22 @@ export const Header: FC<any> = (props) => (
           <ul className="navbar-nav ml-auto">
             {menus.map((m, i) => (
               <li className="nav-item">
-                <NavLink
-                  title={m.title}
-                  key={i}
-                  to={m.path}
-                  className={(props) => {
-                    return `nav-link ${props.isActive ? 'nuxt-link-exact-active nuxt-link-active ' : ''}`;
-                  }}
-                >
-                  {m.title}
-                </NavLink>
+                {
+                  m.scroll ? (
+                    <Link to={m.name} spy={true} smooth={true} duration={250} className='nav-link' activeClass='nuxt-link-exact-active nuxt-link-active'>
+                      {m.title}
+                    </Link>
+                  ) :  (
+                    <NavLink
+                      title={m.title}
+                      key={i}
+                      to={m.path || '/home'}
+                      className={(props) => `nav-link ${props.isActive ? 'nuxt-link-exact-active nuxt-link-active ' : ''}`}
+                    >
+                      {m.title}
+                    </NavLink>
+                  )
+                }
               </li>
             ))}
           </ul>

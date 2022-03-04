@@ -1799,3 +1799,7 @@ a:hover {
 .status-testnet {
   --dot-color: #BA3FD9;;
 }
+
+.nav-link {
+  cursor: pointer;
+}
