@@ -28,7 +28,7 @@ const menus = [
 export const Header: FC<any> = (props) => (
   <header id="header">
     <div className="delegate">
-      <p><i className="icon icon-shield" /> <span>The Internet of Blockchains. (Website is under maintenance)</span></p>
+      <p><i className="icon icon-shield" /> <span>The Internet of Blockchains. (Under Construction)</span></p>
     </div>
     <nav className="navbar navbar-light navbar-expand-lg">
       <div className="container"><a href="https://tcnetwork.io" target="_self" className="navbar-brand nuxt-link-exact-active nuxt-link-active"><img src={LogoIcon} width={41} height={38} alt="" className="d-inline-block align-top" />

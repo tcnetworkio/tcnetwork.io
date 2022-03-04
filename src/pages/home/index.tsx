@@ -7,7 +7,8 @@ import EducationIcon from '../../assets/icons/education.svg';
 import AlignmentIcon from '../../assets/icons/alignment.svg';
 import TransparencyIcon from '../../assets/icons/transparency.svg';
 import IntegrityIcon from '../../assets/icons/integrity.svg';
-import portfolioList from '../../data/portfolio.json';
+import chainValidators from '../../data/validators.json';
+import classNames from 'classnames';
 
 export const HomePage: FC<any> = (props) => (
   <div className="home">
@@ -60,29 +61,35 @@ export const HomePage: FC<any> = (props) => (
           // Step2: Loop through the JSON file and get content data then add into the portfolioList array
           // Step3: Display the portfolioList array
           
-          portfolioList.map((e, i) => (
+          chainValidators.map((e, i) =>  {
+            var chainStatus = classNames({
+              'status-mainnet': e.status === 'Mainnet',
+              'status-testnet': e.status !== 'Mainnet',
+            });
+            
+            return (
             <div key={i} className="col-md-6 col-lg-6 col-xl-4">
-              <a href={e.home_page} target="_blank" rel="noreferrer">
+              <a href={e.url} target="_blank" rel="noreferrer">
                 <div className={`card ${e.name.length > 8 ? 'pr-0' : ''}`}>
-                  <div className="badge-corner-right"><h5><span id="badge-apy-cosmos" className="badge badge-pill badge-success badge-font">% APR</span></h5></div>
-                  <div className="badge-corner-left"><h5><span id="badge-price-cosmos" className="badge badge-dark badge-font">$Price</span></h5></div>
+                  <div className="badge-corner-right"><h5><span id="badge-apy-cosmos" className="badge badge-pill badge-success badge-font">APR -%</span></h5></div>
+                  <div className="badge-corner-left"><h5><span id="badge-price-cosmos" className="badge badge-dark badge-font">$ -</span></h5></div>
                   <div className="card-logo"><img height={90} width={90} src={require(`../../assets/icons/${e.logo}`)} alt="" /></div>
                   <div className="card-body">
-                    <h5 className="card-title">{e.name}</h5>
+                  <div data-v-f322c9fc="" className="card-title">{e.name} <span data-v-f322c9fc className="dot has-tooltip" data-original-title="null"><svg data-v-21c5d077 data-v-f322c9fc width={10} height={10} viewBox="0 0 8 8" fill="var(--dot-color, rgba(59, 66, 125, 0.12))" xmlns="http://www.w3.org/2000/svg" className={chainStatus}><circle data-v-21c5d077 cx={4} cy={4} r={4} /></svg></span></div>
                     <div className="card-status">
-                      <div className="status-h">Status</div>
-                      <div className="status">{e.status}</div>
+                      <div className="uptime">Uptime: {e.uptime}%</div>
+                      <div className="status-h">Commission: {e.commision}%</div>
                       </div>
                      
                   </div>
                   <div className='staking'>
-                     <p className="achieve" id="cosmos_token"><img src={require(`../../assets/icons/staked.png`)} alt="" />999,999</p>
-                     <a className="boxed-btn" href={e.link}>Stake Now</a>
+                     <p style={{display: 'none'}} className="achieve" id="cosmos_token"><img src={require(`../../assets/icons/staked.png`)} alt="" />999,999</p>
+                     <a className="boxed-btn" href={e.address}>Stake Now</a>
                   </div>
                 </div>
               </a>
             </div>
-          ))}
+          )})}
         </div>
       </div>
     </section>
