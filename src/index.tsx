@@ -6,7 +6,7 @@ import { PageLayout } from './pages/layout';
 
 ReactDOM.render(
   <BrowserRouter>
-    <PageLayout />,
+    <PageLayout />
   </BrowserRouter>,
   document.getElementById('root')
 );

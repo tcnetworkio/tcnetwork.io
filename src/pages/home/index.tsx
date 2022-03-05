@@ -9,13 +9,13 @@ import TransparencyIcon from '../../assets/icons/transparency.svg';
 import IntegrityIcon from '../../assets/icons/integrity.svg';
 import chainValidators from '../../data/validators.json';
 import classNames from 'classnames';
-import {
-  Element,
-} from 'react-scroll';
+import { Element } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
 
 export const HomePage: FC<any> = (props) => {
   return (
     <div className='home'>
+      <Element name='scroll-airdrop' />
       <section id='intro'>
         <div className='container'>
           <div className='row'>
@@ -33,9 +33,9 @@ export const HomePage: FC<any> = (props) => {
               <img src='assets/icons/process.svg' alt='' className='img-fluid' />
             </div>
           </div>{' '}
-          <a href='/airdrop' rel='noreferrer' className='btn btn-primary btn-lg'>
+          <NavLink to={'/airdrop'} className='btn btn-primary btn-lg'>
             Check Airdrops
-          </a>
+          </NavLink>
         </div>
         <Element name='scroll-staking' />
       </section>
