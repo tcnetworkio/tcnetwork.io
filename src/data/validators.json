@@ -75,21 +75,6 @@
     "staked_amount": "999999999"
   },
   {
-    "name": "Game",
-    "logo": "game.png",
-    "url": "https://gamenet.one/",
-  
-    "address": "https://gamenet.one",
-    "status": "Mainnet",
-    "uptime": "100",
-    "commision": "5",
-  
-    "apr": "999",
-    "price": "100",
-    "staked_user": "1000",
-    "staked_amount": "999999999"
-  },
-  {
     "name": "Agoric",
     "logo": "agoric.png",
     "url": "https://agoric.bigdipper.live/validators/agoricvaloper188xyq72fveuuvgk7lkht964jhgtc2cw00lf2zn",
@@ -126,6 +111,21 @@
   
     "address": "https://ping.pub/evmos/staking/evmosvaloper1yw3uzauqx3lywnttftjr728e3j6e9ptfk7h406",
     "status": "Mainnet",
+    "uptime": "100",
+    "commision": "5",
+  
+    "apr": "999",
+    "price": "100",
+    "staked_user": "1000",
+    "staked_amount": "999999999"
+  },
+  {
+    "name": "Game",
+    "logo": "game.png",
+    "url": "https://gamenet.one/",
+  
+    "address": "https://gamenet.one",
+    "status": "Testnet",
     "uptime": "100",
     "commision": "5",
   

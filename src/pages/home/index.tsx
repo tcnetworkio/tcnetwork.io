@@ -96,7 +96,7 @@ export const HomePage: FC<any> = (props) => {
                     <div key={i} className='col-md-6 col-lg-6 col-xl-4'>
                       <a href={e.url} target='_blank' rel='noreferrer'>
                         <div className={`card ${e.name.length > 8 ? 'pr-0' : ''}`}>
-                          <div className='badge-corner-right'>
+                          <div className='badge-corner-right' hidden>
                             <h5>
                               <span
                                 id='badge-apy-cosmos'
@@ -106,7 +106,7 @@ export const HomePage: FC<any> = (props) => {
                               </span>
                             </h5>
                           </div>
-                          <div className='badge-corner-left'>
+                          <div className='badge-corner-left' hidden>
                             <h5>
                               <span
                                 id='badge-price-cosmos'
@@ -181,72 +181,36 @@ export const HomePage: FC<any> = (props) => {
       </Element>
       <section id='reasons'>
         <div className='container'>
-          <h3>6 Reasons to Delegate to TCNETWORK.IO</h3>
+          <h3>Few reasons why you should stay with us!</h3>
           <div className='row'>
             <div className='col-reason col-md-6 col-lg-4'>
-              <div className='r-icon'>
-                <img height={90} width={73} src={SecurityIcon} alt='' />
-              </div>
-              <h4>High-security standards</h4>
-              <p>
-                Our infrastructure consists of high-performance servers, enhanced
-                DDoS protection and would continue to evolve as the network
-                matures.
-              </p>
-            </div>
-            <div className='col-reason col-md-6 col-lg-4'>
-              <div className='r-icon'>
-                <img height={90} width={82} src={BlockIcon} alt='' />
-              </div>
-              <h4>Blockchain Expertise</h4>
-              <p>
-                We are tech-savvy former engineers with a deep technical
-                understanding of PoS and POA consensus focused on Security and
-                Quality of the service provided.
-              </p>
-            </div>
-            <div className='col-reason col-md-6 col-lg-4'>
-              <div className='r-icon'>
+            <div className='r-icon'>
                 <img height={90} width={97} src={EducationIcon} alt='' />
               </div>
               <h4>Education</h4>
               <p>
-                We are here to help you navigate the complex world of PoS system.
-                Check out our step by step delegation guide and glossary.
-              </p>
-            </div>
-            <div className='col-reason col-md-6 col-lg-4'>
-              <div className='r-icon'>
-                <img height={90} width={88} src={AlignmentIcon} alt='' />
-              </div>
-              <h4>Alignment</h4>
-              <p>
-                We stake tokens alongside our delegators to have skin in a game
-                and to demonstrate our long-term interest in the networks. All
-                payouts are calculated and processed automatically by the network,
-                so you receive your portion of reward immediately once it is
-                available.
+              Do you have any queries about Cosmos or the TC Network? We're here to assist you in answering them.
+              We will get stronger as a result of this path, since we will acquire more items and share more information.
               </p>
             </div>
             <div className='col-reason pb-0 col-md-6 col-lg-4'>
               <div className='r-icon'>
                 <img height={90} width={73} src={TransparencyIcon} alt='' />
               </div>
-              <h4>Transparency</h4>
+              <h4>Technology</h4>
               <p>
-                We are committed being transparent about our on-chain governance
-                decision making as well as our commission change rate schedule.
+              Almost every member of the TC Network team is a developer, and we love all things technological.
+              We learn from Cosmos Network and aim to share what we've learned to make the world a better place.
               </p>
             </div>
             <div className='col-reason pb-0 col-md-6 col-lg-4'>
               <div className='r-icon'>
                 <img height={70} width={90} src={IntegrityIcon} alt='' />
               </div>
-              <h4>High Integrity</h4>
+              <h4>Commnunity</h4>
               <p>
-                We act independently with the utmost integrity. We do not tolerate
-                collusion between entities in the ecosystem and will help guard
-                the network against malicious cartels.
+              Every TC Network member is an integral element of the community.
+              We're establishing the finest community together, and we're assisting Cosmos System in becoming more powerful.
               </p>
             </div>
           </div>
