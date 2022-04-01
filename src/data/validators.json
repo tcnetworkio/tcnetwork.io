@@ -60,6 +60,21 @@
     "staked_amount": "999999999"
   },
   {
+    "name": "Cerberus",
+    "logo": "cerberus.png",
+    "url": "https://cerberus.zone",
+  
+    "address": "https://ping.pub/cerberus/staking/cerberusvaloper1380ee97fmsr9kfdmy80g6ptxj3k90g04tecq89",
+    "status": "Mainnet",
+    "uptime": "100",
+    "commision": "5",
+  
+    "apr": "999",
+    "price": "100",
+    "staked_user": "1000",
+    "staked_amount": "999999999"
+  },
+  {
     "name": "Nomic",
     "logo": "nomic.jpg",
     "url": "https://nomic.io/",
@@ -111,6 +126,21 @@
   
     "address": "https://ping.pub/evmos/staking/evmosvaloper1yw3uzauqx3lywnttftjr728e3j6e9ptfk7h406",
     "status": "Mainnet",
+    "uptime": "100",
+    "commision": "5",
+  
+    "apr": "999",
+    "price": "100",
+    "staked_user": "1000",
+    "staked_amount": "999999999"
+  },
+  {
+    "name": "Crescent",
+    "logo": "cresent.jpeg",
+    "url": "https://crescent.network/",
+  
+    "address": "https://crescent.network/",
+    "status": "Testnet",
     "uptime": "100",
     "commision": "5",
   
