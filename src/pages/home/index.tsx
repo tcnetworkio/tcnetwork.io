@@ -1,12 +1,10 @@
 import { FC } from 'react';
 import LogoIcon from '../../assets/icons/logo.svg';
 import CosmosIcon from '../../assets/icons/cosmos.png';
-import SecurityIcon from '../../assets/icons/security.svg';
 import BlockIcon from '../../assets/icons/block.svg';
 import EducationIcon from '../../assets/icons/education.svg';
 import AlignmentIcon from '../../assets/icons/alignment.svg';
 import TransparencyIcon from '../../assets/icons/transparency.svg';
-import IntegrityIcon from '../../assets/icons/integrity.svg';
 import chainValidators from '../../data/validators.json';
 import classNames from 'classnames';
 import { Element } from 'react-scroll';
@@ -165,7 +163,7 @@ export const HomePage: FC<any> = (props) => {
                               />
                               999,999
                             </p>
-                            <a className='boxed-btn' href={e.address}>
+                            <a className='boxed-btn' href={e.address} target="_blank">
                               Stake Now
                             </a>
                           </div>
@@ -181,36 +179,44 @@ export const HomePage: FC<any> = (props) => {
       </Element>
       <section id='reasons'>
         <div className='container'>
-          <h3>Few reasons why you should stay with us!</h3>
+          <h3>Why you should stay with us!</h3>
           <div className='row'>
             <div className='col-reason col-md-6 col-lg-4'>
             <div className='r-icon'>
-                <img height={90} width={97} src={EducationIcon} alt='' />
+                <img height={90} width={97} src={AlignmentIcon} alt='' />
               </div>
-              <h4>Education</h4>
+              <h4>Contribution</h4>
               <p>
-              Do you have any queries about Cosmos or the TC Network? We're here to assist you in answering them.
-              We will get stronger as a result of this path, since we will acquire more items and share more information.
+              We are dedicated to community development with non-profit purpose
               </p>
             </div>
             <div className='col-reason pb-0 col-md-6 col-lg-4'>
               <div className='r-icon'>
                 <img height={90} width={73} src={TransparencyIcon} alt='' />
               </div>
-              <h4>Technology</h4>
+              <h4>Decentralize</h4>
               <p>
-              Almost every member of the TC Network team is a developer, and we love all things technological.
-              We learn from Cosmos Network and aim to share what we've learned to make the world a better place.
+              Flat modeling and not under control in any groups or entities are our operational mechanisms, You-I We are creating added values for our community altogether
               </p>
             </div>
             <div className='col-reason pb-0 col-md-6 col-lg-4'>
               <div className='r-icon'>
-                <img height={70} width={90} src={IntegrityIcon} alt='' />
+                <img height={70} width={90} src={BlockIcon} alt='' />
               </div>
-              <h4>Commnunity</h4>
+              <h4>Technology</h4>
               <p>
-              Every TC Network member is an integral element of the community.
-              We're establishing the finest community together, and we're assisting Cosmos System in becoming more powerful.
+              Follow the rules of Cosmos network, sharing and training those who are interested in is our desire 
+              </p>
+            </div>
+            <div className='col-reason pb-0 col-md-6 col-lg-4'>
+              <div className='r-icon'>
+                <img height={70} width={90} src={EducationIcon} alt='' />
+              </div>
+              <h4>Community</h4>
+              <p>
+              Build up a strong community where joint power is helping is mutual. Your asset is your choice in using it efficiently, 
+we only provide informative and valuable tips to our community, will not encourage you to follow one or another.
+
               </p>
             </div>
           </div>

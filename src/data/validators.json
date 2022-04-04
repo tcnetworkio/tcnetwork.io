@@ -49,7 +49,7 @@
     "logo": "chihuahua.png",
     "url": "https://www.chihuahua.wtf/",
   
-    "address": "https://ping.pub/chihuahua/staking",
+    "address": "https://ping.pub/chihuahua/staking/chihuahuavaloper126awjy8y8xstj2t0vadjgtcts7rzqcpyej25sd",
     "status": "Mainnet",
     "uptime": "100",
     "commision": "5",
@@ -92,9 +92,9 @@
   {
     "name": "Agoric",
     "logo": "agoric.png",
-    "url": "https://agoric.bigdipper.live/validators/agoricvaloper188xyq72fveuuvgk7lkht964jhgtc2cw00lf2zn",
+    "url": "https://agoric.com/",
   
-    "address": "https://gamenet.one",
+    "address": "https://agoric.bigdipper.live/validators/agoricvaloper188xyq72fveuuvgk7lkht964jhgtc2cw00lf2zn",
     "status": "Mainnet",
     "uptime": "100",
     "commision": "5",
@@ -109,7 +109,7 @@
     "logo": "certik.jpg",
     "url": "https://www.shentu.technology/",
   
-    "address": "https://ping.pub/certik/staking/certikvaloper1lzucj7228hu5ysh5txmq3z9kf5vh4tjlztqfaf",
+    "address": "https://look.chillvalidation.com/certik/staking/certikvaloper1lzucj7228hu5ysh5txmq3z9kf5vh4tjlztqfaf",
     "status": "Mainnet",
     "uptime": "100",
     "commision": "5",
@@ -139,7 +139,7 @@
     "logo": "cresent.jpeg",
     "url": "https://crescent.network/",
   
-    "address": "https://crescent.network/",
+    "address": "https://testnet.explorer.crescent.nodes.guru/validator/crevaloper12rxjrwu4wcglzgulmp8gq5vfskjtyadyztludk",
     "status": "Testnet",
     "uptime": "100",
     "commision": "5",
@@ -169,7 +169,7 @@
     "logo": "anone.jpg",
     "url": "https://another-1.io/",
   
-    "address": "https://another-1.io",
+    "address": "https://test-anone.zenscan.io/validator.php?addr=onevaloper1yxafnfes6ax62n9snjs44aweyxalsz0hgvjfr0",
     "status": "Test",
     "uptime": "100",
     "commision": "5",
