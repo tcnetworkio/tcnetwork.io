@@ -1,11 +1,13 @@
 import { FC } from 'react';
 import LogoIcon from '../../assets/icons/logo.svg';
+import AirdropIcon from '../../assets/icons/delegation.svg';
 import CosmosIcon from '../../assets/icons/cosmos.png';
 import BlockIcon from '../../assets/icons/block.svg';
 import EducationIcon from '../../assets/icons/education.svg';
 import AlignmentIcon from '../../assets/icons/alignment.svg';
 import TransparencyIcon from '../../assets/icons/transparency.svg';
-import chainValidators from '../../data/validators.json';
+import mainnetValidators from '../../data/mainnet.json';
+import testnetValidators from '../../data/testnet.json';
 import classNames from 'classnames';
 import { Element } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
@@ -28,7 +30,8 @@ export const HomePage: FC<any> = (props) => {
               </p>
             </div>
             <div className='col-lg-6 d-flex align-items-center'>
-              <img src='assets/icons/process.svg' alt='' className='img-fluid' />
+              <img src={AirdropIcon} className='img-fluid' />
+              {/* <img src='assets/icons/process.svg' alt='' className='img-fluid' /> */}
             </div>
           </div>{' '}
           <NavLink to={'/airdrop'} className='btn btn-primary btn-lg'>
@@ -42,12 +45,7 @@ export const HomePage: FC<any> = (props) => {
         <div className='container'>
           <div className='row d-flex align-items-center'>
             <div className='col-lg-6 order-2 order-lg-0'>
-              <img
-                src={CosmosIcon}
-                width={400}
-                height={300}
-                className='d-inline-block align-top'
-              />
+              <img src={CosmosIcon} width={400} height={300} className='d-inline-block align-top' />
             </div>
             <div className='col-lg-6 order-0 order-lg-2'>
               <h3>Staking on Cosmos Network made SIMPLE</h3>
@@ -61,75 +59,49 @@ export const HomePage: FC<any> = (props) => {
                 building dApps and supporting Cosmos projects.
               </p>
               <br></br>
-              <a
-                href='/stake'
-                rel='noreferrer'
-                className='btn btn-primary btn-lg'
-              >
-                Staking Now
-              </a>
+              <a href='/stake' rel='noreferrer' className='btn btn-primary btn-lg'>Staking Now</a>
             </div>
           </div>
         </div>
       </section>
+
       <Element name='scroll-validator'>
         <section id='portfolio'>
           <div className='container'>
             <h3>Portfolio | Joined as the Validator!</h3>
             <div className='row'>
               {
-                // Purpose >>>> get all json file from directory and display them
-
-                // Step1: Get JSON file from /data/validator folder
-                // Step2: Loop through the JSON file and get content data then add into the portfolioList array
-                // Step3: Display the portfolioList array
-
-                chainValidators.map((e, i) => {
+                mainnetValidators.map((e: any, i) => {
                   var chainStatus = classNames({
-                    'status-mainnet': e.status === 'Mainnet',
-                    'status-testnet': e.status !== 'Mainnet',
+                    'status-mainnet-active': e.status === 'active',
+                    'status-mainnet-inactive': e.status === 'inactive',
                   });
 
                   return (
                     <div key={i} className='col-md-6 col-lg-6 col-xl-4'>
                       <a href={e.url} target='_blank' rel='noreferrer'>
                         <div className={`card ${e.name.length > 8 ? 'pr-0' : ''}`}>
-                          <div className='badge-corner-right' hidden>
+                          {/* <div className='badge-corner-right' hidden>
                             <h5>
-                              <span
-                                id='badge-apy-cosmos'
-                                className='badge badge-pill badge-success badge-font'
-                              >
+                              <span id='badge-apy-cosmos' className='badge badge-pill badge-success badge-font'>
                                 APR -%
                               </span>
                             </h5>
                           </div>
                           <div className='badge-corner-left' hidden>
                             <h5>
-                              <span
-                                id='badge-price-cosmos'
-                                className='badge badge-dark badge-font'
-                              >
+                              <span id='badge-price-cosmos' className='badge badge-dark badge-font'>
                                 $ -
                               </span>
                             </h5>
-                          </div>
+                          </div> */}
                           <div className='card-logo'>
-                            <img
-                              height={90}
-                              width={90}
-                              src={require(`../../assets/icons/${e.logo}`)}
-                              alt=''
-                            />
+                            <img height={90} width={90} src={require(`../../assets/validators/${e.logo}`)} alt='' />
                           </div>
                           <div className='card-body'>
-                            <div data-v-f322c9fc='' className='card-title'>
+                            <div className='card-title'>
                               {e.name}{' '}
-                              <span
-                                data-v-f322c9fc
-                                className='dot has-tooltip'
-                                data-original-title='null'
-                              >
+                              <span className='dot has-tooltip' data-original-title='null'>
                                 <svg
                                   data-v-21c5d077
                                   data-v-f322c9fc
@@ -145,23 +117,15 @@ export const HomePage: FC<any> = (props) => {
                               </span>
                             </div>
                             <div className='card-status'>
+                              <div className='status-h'>APR: %</div>
                               <div className='uptime'>Uptime: {e.uptime}%</div>
-                              <div className='status-h'>
-                                Commission: {e.commision}%
-                              </div>
+                              <div className='status-h'>Commission: {e.commision}%</div>
                             </div>
                           </div>
+
                           <div className='staking'>
-                            <p
-                              style={{ display: 'none' }}
-                              className='achieve'
-                              id='cosmos_token'
-                            >
-                              <img
-                                src={require(`../../assets/icons/staked.png`)}
-                                alt=''
-                              />
-                              999,999
+                            <p style={{ display: 'none' }} className='achieve' id='cosmos_token'>
+                              <img src={require(`../../assets/icons/staked.png`)} alt='' />
                             </p>
                             <a className='boxed-btn' href={e.address} target="_blank">
                               Stake Now
@@ -174,48 +138,101 @@ export const HomePage: FC<any> = (props) => {
                 })
               }
             </div>
+
+            <div className='testnet'>Testnet</div>
+            <div className='row'>
+              {
+                testnetValidators.map((e: any, i) => {
+                  var chainStatus = classNames({
+                    'status-testnet-active': e.status === 'active',
+                    'status-testnet-inactive': e.status === 'inactive',
+                  });
+
+                  return (
+                    <div key={i} className='col-md-6 col-lg-6 col-xl-4'>
+                      <a href={e.url} target='_blank' rel='noreferrer'>
+                        <div className={`card ${e.name.length > 8 ? 'pr-0' : ''}`}>
+                          <div className='card-logo'>
+                            <img height={90} width={90} src={require(`../../assets/validators/${e.logo}`)} alt='' />
+                          </div>
+                          <div className='card-body'>
+                            <div className='card-title'>
+                              {e.name}{' '}
+                              <span className='dot has-tooltip' data-original-title='null'>
+                                <svg
+                                  data-v-21c5d077
+                                  data-v-f322c9fc
+                                  width={10}
+                                  height={10}
+                                  viewBox='0 0 8 8'
+                                  fill='var(--dot-color, rgba(59, 66, 125, 0.12))'
+                                  xmlns='http://www.w3.org/2000/svg'
+                                  className={chainStatus}
+                                >
+                                  <circle data-v-21c5d077 cx={4} cy={4} r={4} />
+                                </svg>
+                              </span>
+                            </div>
+                            <div className='card-status'>
+                              <div className='status-h'>APR: %</div>
+                              <div className='uptime'>Uptime: {e.uptime}%</div>
+                              <div className='status-h'>Commission: {e.commision}%</div>
+                            </div>
+                          </div>
+
+                          <div className='staking'>
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  );
+                })
+              }
+            </div>
           </div>
         </section>
       </Element>
+
       <section id='reasons'>
         <div className='container'>
           <h3>Why you should stay with us!</h3>
           <div className='row'>
-            <div className='col-reason col-md-6 col-lg-4'>
-            <div className='r-icon'>
+            <div className='col-reason col-md-6 col-lg-3'>
+              <div className='r-icon'>
                 <img height={90} width={97} src={AlignmentIcon} alt='' />
               </div>
               <h4>Contribution</h4>
               <p>
-              We are dedicated to community development with non-profit purpose
+                We are dedicated to community development with non-profit purpose. Our revenue paid for apps/tools development and maintainence cost.
               </p>
             </div>
-            <div className='col-reason pb-0 col-md-6 col-lg-4'>
+            <div className='col-reason pb-0 col-md-6 col-lg-3'>
               <div className='r-icon'>
                 <img height={90} width={73} src={TransparencyIcon} alt='' />
               </div>
               <h4>Decentralize</h4>
               <p>
-              Flat modeling and not under control in any groups or entities are our operational mechanisms, You-I We are creating added values for our community altogether
+                Flat modeling and not under control in any groups or entities are our operational mechanisms, You-I We are creating added values for our community altogether
               </p>
             </div>
-            <div className='col-reason pb-0 col-md-6 col-lg-4'>
+            <div className='col-reason pb-0 col-md-6 col-lg-3'>
               <div className='r-icon'>
                 <img height={70} width={90} src={BlockIcon} alt='' />
               </div>
               <h4>Technology</h4>
               <p>
-              Follow the rules of Cosmos network, sharing and training those who are interested in is our desire 
+                Follow the rules of Cosmos network, providing staking service, building tools, validating cosmos chains, sharing and training those who are interested in is our desire
               </p>
             </div>
-            <div className='col-reason pb-0 col-md-6 col-lg-4'>
+            <div className='col-reason pb-0 col-md-6 col-lg-3'>
               <div className='r-icon'>
                 <img height={70} width={90} src={EducationIcon} alt='' />
               </div>
               <h4>Community</h4>
               <p>
-              Build up a strong community where joint power is helping is mutual. Your asset is your choice in using it efficiently, 
-we only provide informative and valuable tips to our community, will not encourage you to follow one or another.
+                Build up a strong community where joint power is helping is mutual. Your asset is your choice in using it efficiently,
+                we only provide informative and valuable tips to our community, will not encourage you to follow one or another.
 
               </p>
             </div>

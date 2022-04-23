@@ -1,5 +1,4 @@
 import { Page404 } from '../404/404';
-import { AirdropPage } from '../airdrop';
 import { HomePage } from '../home';
 
 export const routers = [
@@ -14,7 +13,7 @@ export const routers = [
   },
   {
     path: '/airdrop',
-    component: <AirdropPage />,
+    component: <HomePage />,
   },
   {
     path: '/validator',

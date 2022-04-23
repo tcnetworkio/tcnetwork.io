@@ -199,13 +199,15 @@ div#tcnetwork {
   min-height: 100vh
 }
 
-div#tcnetwork>div, div#tcnetwork>section {
+div#tcnetwork>div,
+div#tcnetwork>section {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1
 }
 
-a:focus, button.btn:focus {
+a:focus,
+button.btn:focus {
   outline: none
 }
 
@@ -214,7 +216,8 @@ a:focus, button.btn:focus {
     position: relative
   }
 
-  div#tcnetwork:after, div#tcnetwork:before {
+  div#tcnetwork:after,
+  div#tcnetwork:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -227,7 +230,9 @@ a:focus, button.btn:focus {
 }
 
 @media (min-width:992px) and (min-width:1200px) {
-  div#tcnetwork:after, div#tcnetwork:before {
+
+  div#tcnetwork:after,
+  div#tcnetwork:before {
     width: 45%
   }
 }
@@ -294,7 +299,8 @@ header#header .delegate p {
   margin-bottom: .25rem
 }
 
-header#header .delegate .btn-copy, header#header .delegate p {
+header#header .delegate .btn-copy,
+header#header .delegate p {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -383,7 +389,10 @@ header#header .navbar-nav .nav-link {
   }
 }
 
-.btn.focus, .btn:focus, .btn:not(:disabled):not(.disabled).active:focus, .btn:not(:disabled):not(.disabled):active:focus {
+.btn.focus,
+.btn:focus,
+.btn:not(:disabled):not(.disabled).active:focus,
+.btn:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: none;
   box-shadow: none
 }
@@ -405,7 +414,10 @@ header#header .navbar-nav .nav-link {
   }
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active {
   border-color: #F87907;
   background-color: #F87907
 }
@@ -433,6 +445,15 @@ section h3 {
   letter-spacing: .7px;
   color: #fff;
   margin-bottom: 50px
+}
+
+section#portfolio .testnet {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: .7px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px
 }
 
 @media (max-width:991.98px) {
@@ -588,8 +609,7 @@ section#portfolio a:hover {
 }
 
 section#portfolio .card {
-  padding: 30px;
-  padding-top: 70px;
+  padding: 20px;
   padding-bottom: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -620,7 +640,9 @@ section#portfolio .card:hover {
   transition: background-color .3s ease-in-out, border-color .3s ease-in-out, box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out
 }
 
-section#portfolio .card:hover .card-text, section#portfolio .card:hover .card-title, section#portfolio .card:hover .status {
+section#portfolio .card:hover .card-text,
+section#portfolio .card:hover .card-title,
+section#portfolio .card:hover .status {
   color: #fff;
   -webkit-transition: color .3s;
   transition: color .3s
@@ -643,7 +665,6 @@ section#portfolio .card-title {
   font-weight: 700;
   letter-spacing: .4px;
   color: #F87907;
-  margin-bottom: 25px
 }
 
 @media (max-width:767.98px) {
@@ -684,14 +705,15 @@ section#portfolio .card-logo {
 }
 
 section#portfolio .card-body {
-  padding: 0
+  padding: 0;
+  height: 108px;
 }
 
 section#portfolio .status-h {
   letter-spacing: .3px;
   color: #333333;
-  margin-bottom: 5px;
-  font-size: 14px
+  margin-bottom: 3px;
+  font-size: 13px
 }
 
 section#portfolio .status {
@@ -702,10 +724,11 @@ section#portfolio .status {
 }
 
 .uptime {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
-  letter-spacing: .4px;
-  color: #4ACF4A
+  letter-spacing: .3px;
+  color: #4ACF4A;
+  margin-bottom: 3px;
 }
 
 section#portfolio .btn-card {
@@ -746,7 +769,8 @@ section#portfolio .iris {
   background-color: #131837 !important
 }
 
-section#portfolio .chainlink, section#portfolio .polkadot {
+section#portfolio .chainlink,
+section#portfolio .polkadot {
   background-color: #fff !important
 }
 
@@ -1076,7 +1100,11 @@ section#metrics .row>div:nth-child(2n) .metric-content {
 }
 
 @media (min-width:1200px) {
-  section#metrics .row>div:first-child .metric-content>div, section#metrics .row>div:first-child .metric-content p, section#metrics .row>div:last-child .metric-content>div, section#metrics .row>div:last-child .metric-content p {
+
+  section#metrics .row>div:first-child .metric-content>div,
+  section#metrics .row>div:first-child .metric-content p,
+  section#metrics .row>div:last-child .metric-content>div,
+  section#metrics .row>div:last-child .metric-content p {
     color: #fff
   }
 
@@ -1162,17 +1190,21 @@ section#metrics .metric-content p {
   margin-bottom: 0
 }
 
-.no-gutters>.box, section#history .no-gutters>.history-row {
+.no-gutters>.box,
+section#history .no-gutters>.history-row {
   padding: 25px
 }
 
 @media (min-width:768px) {
-  .no-gutters>.box, section#history .no-gutters>.history-row {
+
+  .no-gutters>.box,
+  section#history .no-gutters>.history-row {
     padding: 50px
   }
 }
 
-.box, section#history .history-row {
+.box,
+section#history .history-row {
   padding: 25px;
   border-radius: 10px;
   -webkit-box-shadow: -2.1px 29.9px 35px 0 rgba(46, 21, 107, .09);
@@ -1181,26 +1213,33 @@ section#metrics .metric-content p {
 }
 
 @media (min-width:768px) {
-  .box, section#history .history-row {
+
+  .box,
+  section#history .history-row {
     padding: 50px
   }
 }
 
-.box .icon, section#history .history-row .icon {
+.box .icon,
+section#history .history-row .icon {
   background-color: #403cd7
 }
 
-.box a, section#history .history-row a {
+.box a,
+section#history .history-row a {
   color: #403cd7;
   font-weight: 700;
   margin-bottom: 20px
 }
 
-.box p, section#history .history-row p {
+.box p,
+section#history .history-row p {
   margin-bottom: 0
 }
 
-section#history section#how_to_stake .history-row p, section#how_to_stake .box p, section#how_to_stake section#history .history-row p {
+section#history section#how_to_stake .history-row p,
+section#how_to_stake .box p,
+section#how_to_stake section#history .history-row p {
   text-align: center
 }
 
@@ -1541,12 +1580,14 @@ section#history .history-row .col-history p .icon {
   color: #155724
 }
 
-.page-enter-active, .page-leave-active {
+.page-enter-active,
+.page-leave-active {
   -webkit-transition: opacity .3s;
   transition: opacity .3s
 }
 
-.page-enter, .page-leave-to {
+.page-enter,
+.page-leave-to {
   opacity: 0
 }
 
@@ -1617,7 +1658,10 @@ section#glossary .anchors a:hover {
 }
 
 @media (min-width:992px) {
-  section#history section#partnership .history-row h4, section#partnership .box h4, section#partnership section#history .history-row h4 {
+
+  section#history section#partnership .history-row h4,
+  section#partnership .box h4,
+  section#partnership section#history .history-row h4 {
     min-height: 160px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1630,7 +1674,9 @@ section#glossary .anchors a:hover {
     align-items: center
   }
 
-  section#history section#partnership .history-row p, section#partnership .box p, section#partnership section#history .history-row p {
+  section#history section#partnership .history-row p,
+  section#partnership .box p,
+  section#partnership section#history .history-row p {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1
@@ -1646,6 +1692,7 @@ section#glossary .anchors a:hover {
   flex-basis: 100%;
   text-align: center;
 }
+
 .single-stake-item {
   background: #FFFFFF;
   box-shadow: 0 20px 50px rgb(0 0 0 / 5%);
@@ -1756,9 +1803,9 @@ section#glossary .anchors a:hover {
   border-radius: 8px;
   color: #fff;
   width: 127px;
-  height: 50px;
+  height: 40px;
   font-size: 16px;
-  line-height: 50px;
+  line-height: 40px;
   text-align: center;
   z-index: 1;
   text-transform: capitalize;
@@ -1796,9 +1843,29 @@ a:hover {
   --dot-color: #4ACF4A;
 }
 
-.status-testnet {
-  --dot-color: #BA3FD9;;
+.status-mainnet-active {
+  --dot-color: #4ACF4A;
 }
+
+.status-mainnet-inactive {
+  --dot-color: #dfdfdf;
+}
+
+.status-testnet {
+  --dot-color: #BA3FD9;
+  ;
+}
+
+.status-testnet-active {
+  --dot-color: #BA3FD9;
+  ;
+}
+
+.status-testnet-inactive {
+  --dot-color: #dfdfdf;
+  ;
+}
+
 
 .nav-link {
   cursor: pointer;

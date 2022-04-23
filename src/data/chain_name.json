@@ -1,13 +1,12 @@
 {
     "name": "CHAIN NAME",
+    "description": "CHAIN DESCRIPTION",
     "logo": "GIVE LOGO NAME FROM IMAGE PATH",
     "url": "https://CHAIN.URL",
-
     "address": "https://VADILDATOR.URL",
     "status": "MAINNET OR TESTNET",
     "uptime": "UPTIME",
     "commision": "COMMISION",
-
     "apr": "APR",
     "price": "PRICE",
     "staked_user": "STAKED AMOUNT",
