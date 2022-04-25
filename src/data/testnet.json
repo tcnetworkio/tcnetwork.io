@@ -6,9 +6,9 @@
         "url": "https://gamenet.one/",
         "address": "https://gamenet.one",
         "status": "inactive",
-        "uptime": "100",
+        "uptime": "0",
         "commision": "5",
-        "apr": "",
+        "apr": null,
         "price": "",
         "staked_user": "",
         "staked_amount": ""
@@ -22,7 +22,7 @@
         "status": "active",
         "uptime": "100",
         "commision": "5",
-        "apr": "",
+        "apr": null,
         "price": "",
         "staked_user": "",
         "staked_amount": ""
@@ -36,7 +36,7 @@
         "status": "active",
         "uptime": "100",
         "commision": "5",
-        "apr": "",
+        "apr": null,
         "price": "",
         "staked_user": "",
         "staked_amount": ""
@@ -50,7 +50,7 @@
         "status": "inactive",
         "uptime": "100",
         "commision": "10",
-        "apr": "",
+        "apr": null,
         "price": "",
         "staked_user": "",
         "staked_amount": ""
@@ -64,7 +64,7 @@
         "status": "active",
         "uptime": "100",
         "commision": "10",
-        "apr": "",
+        "apr": null,
         "price": "",
         "staked_user": "",
         "staked_amount": ""
@@ -78,7 +78,7 @@
         "status": "active",
         "uptime": "100",
         "commision": "10",
-        "apr": "",
+        "apr": null,
         "price": "",
         "staked_user": "",
         "staked_amount": ""

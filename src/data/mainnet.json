@@ -8,7 +8,13 @@
         "status": "active",
         "uptime": "100",
         "commision": "5",
-        "apr": "",
+        "apr": {
+            "inflation": "https://api-1-dig.notional.ventures/minting/inflation",
+            "communityTax": "https://api-1-dig.notional.ventures/cosmos/distribution/v1beta1/params",
+            "supply": "https://api-1-dig.notional.ventures/cosmos/bank/v1beta1/supply/udig",
+            "pool": "https://api-1-dig.notional.ventures/cosmos/staking/v1beta1/pool",
+            "blocktime": "6.8"
+        },
         "price": "",
         "staked_user": "",
         "staked_amount": ""
@@ -22,7 +28,13 @@
         "status": "active",
         "uptime": "100",
         "commision": "5",
-        "apr": "",
+        "apr": {
+            "inflation": "https://azuredragon.noopsbycertik.com/minting/inflation",
+            "communityTax": "https://azuredragon.noopsbycertik.com/distribution/parameters",
+            "supply": "https://azuredragon.noopsbycertik.com/cosmos/bank/v1beta1/supply/uctk",
+            "pool": "https://azuredragon.noopsbycertik.com/staking/pool",
+            "blocktime": "https://api.mintscan.io/v1/certik/block/blocktime"
+        },
         "price": "",
         "staked_user": "",
         "staked_amount": ""
@@ -36,7 +48,13 @@
         "status": "active",
         "uptime": "100",
         "commision": "5",
-        "apr": "",
+        "apr": {
+            "inflation": "0.1344",
+            "communityTax": "https://odinapi.chillvalidation.com/distribution/parameters",
+            "supply": "https://odinapi.chillvalidation.com/cosmos/bank/v1beta1/supply/loki",
+            "pool": "https://odinapi.chillvalidation.com/staking/pool",
+            "blocktime": ""
+        },
         "price": "",
         "staked_user": "",
         "staked_amount": ""
@@ -50,7 +68,13 @@
         "status": "active",
         "uptime": "100",
         "commision": "5",
-        "apr": "",
+        "apr": {
+            "inflation": "https://api.mainnet.desmos.network/minting/inflation",
+            "communityTax": "https://api.mainnet.desmos.network/distribution/parameters",
+            "supply": "https://api.mainnet.desmos.network/cosmos/bank/v1beta1/supply/udsm",
+            "pool": "https://api.mainnet.desmos.network/staking/pool",
+            "blocktime": "https://api.mintscan.io/v1/desmos/block/blocktime"
+        },
         "price": "",
         "staked_user": "",
         "staked_amount": ""
@@ -64,7 +88,13 @@
         "status": "active",
         "uptime": "100",
         "commision": "5",
-        "apr": "",
+        "apr": {
+            "inflation": "https://gravitychain.io:1317/minting/inflation",
+            "communityTax": "https://gravitychain.io:1317/distribution/parameters",
+            "supply": "https://gravitychain.io:1317/cosmos/bank/v1beta1/supply/ugraviton",
+            "pool": "https://gravitychain.io:1317/staking/pool",
+            "blocktime": "https://api.mintscan.io/v1/gravity-bridge/block/blocktime"
+        },
         "price": "",
         "staked_user": "",
         "staked_amount": ""
@@ -78,7 +108,7 @@
         "status": "active",
         "uptime": "100",
         "commision": "5",
-        "apr": "",
+        "apr": null,
         "price": "",
         "staked_user": "",
         "staked_amount": ""
@@ -92,7 +122,13 @@
         "status": "inactive",
         "uptime": "0",
         "commision": "5",
-        "apr": "",
+        "apr": {
+            "inflation": "https://api.agoric.sgtstake.com/minting/inflation",
+            "communityTax": "https://api.agoric.sgtstake.com/distribution/parameters",
+            "supply": "https://api.agoric.sgtstake.com/cosmos/bank/v1beta1/supply/ubld",
+            "pool": "https://api.agoric.sgtstake.com/staking/pool",
+            "blocktime": ""
+        },
         "price": "",
         "staked_user": "",
         "staked_amount": ""
@@ -106,7 +142,13 @@
         "status": "inactive",
         "uptime": "0",
         "commision": "5",
-        "apr": "",
+        "apr": {
+            "inflation": "https://api.chihuahua.wtf/minting/inflation",
+            "communityTax": "https://api.chihuahua.wtf/distribution/parameters",
+            "supply": "https://api.chihuahua.wtf/cosmos/bank/v1beta1/supply/uhuahua",
+            "pool": "https://api.chihuahua.wtf/staking/pool",
+            "blocktime": "https://api.mintscan.io/v1/chihuahua/block/blocktime"
+        },
         "price": "",
         "staked_user": "",
         "staked_amount": ""
@@ -120,7 +162,13 @@
         "status": "active",
         "uptime": "100",
         "commision": "5",
-        "apr": "",
+        "apr": {
+            "inflation": "https://api.cerberus.zone:1317/minting/inflation",
+            "communityTax": "https://api.cerberus.zone:1317/distribution/parameters",
+            "supply": "https://api.cerberus.zone:1317/cosmos/bank/v1beta1/supply/ucrbrus",
+            "pool": "https://api.cerberus.zone:1317/staking/pool",
+            "blocktime": "https://api.mintscan.io/v1/cerberus/block/blocktime"
+        },
         "price": "",
         "staked_user": "",
         "staked_amount": ""
@@ -134,7 +182,13 @@
         "status": "inactive",
         "uptime": "0",
         "commision": "5",
-        "apr": "",
+        "apr": {
+            "inflation": "0.05",
+            "communityTax": "https://crescent-api.polkachu.com/distribution/parameters",
+            "supply": "https://crescent-api.polkachu.com/cosmos/bank/v1beta1/supply/ucre",
+            "pool": "https://crescent-api.polkachu.com/staking/pool",
+            "blocktime": "https://api.mintscan.io/v1/crescent/block/blocktime"
+        },
         "price": "",
         "staked_user": "",
         "staked_amount": ""
@@ -148,7 +202,14 @@
         "status": "active",
         "uptime": "100",
         "commision": "5",
-        "apr": "",
+        "apr": {
+            "inflation_distribution": "https://rest.bd.evmos.org:1317/evmos/inflation/v1/params",
+            "inflation": "0.533333334",
+            "communityTax": "https://rest.bd.evmos.org:1317/distribution/parameters",
+            "supply": "https://rest.bd.evmos.org:1317/cosmos/bank/v1beta1/supply/aevmos",
+            "pool": "https://rest.bd.evmos.org:1317/staking/pool",
+            "blocktime": "https://api.mintscan.io/v1/evmos/block/blocktime"
+        },
         "price": "",
         "staked_user": "",
         "staked_amount": ""

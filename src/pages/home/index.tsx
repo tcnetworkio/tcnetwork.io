@@ -11,8 +11,79 @@ import testnetValidators from '../../data/testnet.json';
 import classNames from 'classnames';
 import { Element } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+
+const fetchData = (url: string, options = undefined) => {
+  return fetch(url, options)
+    .then(res => res.json())
+    .catch((error) => console.error(error));
+}
 
 export const HomePage: FC<any> = (props) => {
+  const [validatorParams, setValidatorParams] = useState<any[]>([]);
+
+  useEffect(() => {
+    const promises = mainnetValidators.map(chain => {
+      if (!chain.apr) {
+        return {
+          name: chain.name,
+          apr: '0.00'
+        };
+      }
+
+      const chainPromises = [];
+      if (chain.apr.inflation) {
+        chain.apr.inflation.indexOf('http') === -1
+          ? chainPromises.push({ result: +chain.apr.inflation })
+          : chainPromises.push(fetchData(chain.apr.inflation));
+      }
+
+      if (chain.apr.communityTax) {
+        chainPromises.push(fetchData(chain.apr.communityTax));
+      }
+
+      if (chain.apr.supply) {
+        chainPromises.push(fetchData(chain.apr.supply));
+      }
+
+      if (chain.apr.pool) {
+        chainPromises.push(fetchData(chain.apr.pool));
+      }
+
+      if (chain.apr.blocktime) {
+        chain.apr.blocktime.indexOf('http') === -1
+          ? chainPromises.push({ block_time: +chain.apr.blocktime })
+          : chainPromises.push(fetchData(chain.apr.blocktime));
+      }
+
+      return Promise
+        .all(chainPromises)
+        .then(data => {
+          if (!data[0] || !data[1] || !data[2] || !data[3]) {
+            return {
+              name: chain.name,
+              apr: 0.00
+            };
+          }
+
+          const inflation = +data[0].result;
+          const communityTax = +((data[1].result || data[1].params).community_tax);
+          const blockTimeRate = data[4] ? 6 / data[4].block_time : 1;
+          const bondedRatio = (data[3].result || data[3].pool).bonded_tokens / data[2].amount.amount;
+
+          return {
+            name: chain.name,
+            apr: (((inflation * (1 - communityTax) * blockTimeRate) / bondedRatio) * 100).toFixed(2)
+          };
+        });
+    });
+
+    Promise
+      .all(promises)
+      .then(validatorParams => setValidatorParams(validatorParams))
+
+  }, []);
+
   return (
     <div className='home'>
       <Element name='scroll-airdrop' />
@@ -77,6 +148,8 @@ export const HomePage: FC<any> = (props) => {
                     'status-mainnet-inactive': e.status === 'inactive',
                   });
 
+                  const validatorParam = validatorParams.find(x => x.name === e.name);
+
                   return (
                     <div key={i} className='col-md-6 col-lg-6 col-xl-4'>
                       <a href={e.url} target='_blank' rel='noreferrer'>
@@ -117,8 +190,8 @@ export const HomePage: FC<any> = (props) => {
                               </span>
                             </div>
                             <div className='card-status'>
-                              <div className='status-h'>APR: %</div>
-                              <div className='uptime'>Uptime: {e.uptime}%</div>
+                              <div className='status-h'>APR: <span className='apr'> {validatorParam ? validatorParam.apr : 0.00}%</span></div>
+                              <div className='status-h'>Uptime: <span className='uptime'>{e.uptime}%</span></div>
                               <div className='status-h'>Commission: {e.commision}%</div>
                             </div>
                           </div>
@@ -174,8 +247,8 @@ export const HomePage: FC<any> = (props) => {
                               </span>
                             </div>
                             <div className='card-status'>
-                              <div className='status-h'>APR: %</div>
-                              <div className='uptime'>Uptime: {e.uptime}%</div>
+                              <div className='status-h'>APR: <span className='apr'> 0%</span></div>
+                              <div className='status-h'>Uptime: <span className='uptime'>{e.uptime}%</span></div>
                               <div className='status-h'>Commission: {e.commision}%</div>
                             </div>
                           </div>

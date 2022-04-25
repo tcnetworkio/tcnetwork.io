@@ -723,9 +723,14 @@ section#portfolio .status {
   color: #F87907
 }
 
+.apr {
+  font-weight: bold;
+  color: #F87907;
+}
+
 .uptime {
   font-size: 13px;
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: .3px;
   color: #4ACF4A;
   margin-bottom: 3px;
@@ -1865,6 +1870,7 @@ a:hover {
   --dot-color: #dfdfdf;
   ;
 }
+
 
 
 .nav-link {
