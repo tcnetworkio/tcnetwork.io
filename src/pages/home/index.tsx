@@ -105,9 +105,9 @@ export const HomePage: FC<any> = (props) => {
               {/* <img src='assets/icons/process.svg' alt='' className='img-fluid' /> */}
             </div>
           </div>{' '}
-          <NavLink to={'/airdrop'} className='btn btn-primary btn-lg'>
+          <a className='btn btn-primary btn-lg' href="https://airdrop.tcnetwork.io" target="_blank">
             Check Airdrops
-          </NavLink>
+          </a>
         </div>
         <Element name='scroll-staking' />
       </section>

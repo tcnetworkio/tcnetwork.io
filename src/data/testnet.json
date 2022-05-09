@@ -47,10 +47,16 @@
         "logo": "cosmic.jpeg",
         "url": "https://cosmic-horizon.com/",
         "address": "https://cosmic-horizon.com/",
-        "status": "inactive",
+        "status": "active",
         "uptime": "100",
-        "commision": "10",
-        "apr": null,
+        "commision": "5",
+        "apr": {
+            "inflation": "https://coho-test.postcapitalist.io/minting/inflation",
+            "communityTax": "https://coho-test.postcapitalist.io/distribution/parameters",
+            "supply": "https://coho-test.postcapitalist.io/cosmos/bank/v1beta1/supply/ucoho",
+            "pool": "https://coho-test.postcapitalist.io/staking/pool",
+            "blocktime": "6"
+        },
         "price": "",
         "staked_user": "",
         "staked_amount": ""

@@ -213,5 +213,25 @@
         "price": "",
         "staked_user": "",
         "staked_amount": ""
+    },
+    {
+        "name": "Galaxy",
+        "description": "",
+        "logo": "galaxy.jpeg",
+        "url": "https://galaxychain.zone/",
+        "address": "https://explorer.postcapitalist.io/Galaxy/staking/galaxyvaloper13w49jenys3ch5wp9jykj4gu6szds5djr0nn44a",
+        "status": "active",
+        "uptime": "100",
+        "commision": "5",
+        "apr": {
+            "inflation": "0.5",
+            "communityTax": "https://galaxy.postcapitalist.io/distribution/parameters",
+            "supply": "https://galaxy.postcapitalist.io/cosmos/bank/v1beta1/supply/uglx",
+            "pool": "https://galaxy.postcapitalist.io/staking/pool",
+            "blocktime": "6"
+        },
+        "price": "",
+        "staked_user": "",
+        "staked_amount": ""
     }
 ]

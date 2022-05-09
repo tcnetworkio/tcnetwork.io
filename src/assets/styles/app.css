@@ -642,7 +642,8 @@ section#portfolio .card:hover {
 
 section#portfolio .card:hover .card-text,
 section#portfolio .card:hover .card-title,
-section#portfolio .card:hover .status {
+section#portfolio .card:hover .status,
+section#portfolio .card:hover .apr {
   color: #fff;
   -webkit-transition: color .3s;
   transition: color .3s
