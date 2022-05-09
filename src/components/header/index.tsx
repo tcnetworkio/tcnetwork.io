@@ -34,9 +34,9 @@ export const Header: FC<any> = (props) => {
   return (
     <header id="header">
       <Element name='scroll-home' />
-      <div className="delegate">
+      {/* <div className="delegate">
         <p><i className="icon icon-shield" /> <span>The Internet of Blockchains. (Under Construction)</span></p>
-      </div>
+      </div> */}
       <nav className="navbar navbar-light navbar-expand-lg">
         <div className="container">
           <NavLink to={'/'} className="navbar-brand nuxt-link-exact-active nuxt-link-active">
