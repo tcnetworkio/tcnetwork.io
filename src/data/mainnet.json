@@ -25,8 +25,8 @@
         "logo": "certik.jpg",
         "url": "https://www.shentu.technology/",
         "address": "https://look.chillvalidation.com/certik/staking/certikvaloper1lzucj7228hu5ysh5txmq3z9kf5vh4tjlztqfaf",
-        "status": "active",
-        "uptime": "100",
+        "status": "inactive",
+        "uptime": "0",
         "commision": "5",
         "apr": {
             "inflation": "https://azuredragon.noopsbycertik.com/minting/inflation",
@@ -203,6 +203,8 @@
         "uptime": "100",
         "commision": "5",
         "apr": {
+            "isBasedOnEpoch": true,
+            "ePochProvision": "https://rest.bd.evmos.org:1317/evmos/inflation/v1/epoch_mint_provision",
             "inflation_distribution": "https://rest.bd.evmos.org:1317/evmos/inflation/v1/params",
             "inflation": "0.533333334",
             "communityTax": "https://rest.bd.evmos.org:1317/distribution/parameters",
@@ -228,6 +230,27 @@
             "communityTax": "https://galaxy.postcapitalist.io/distribution/parameters",
             "supply": "https://galaxy.postcapitalist.io/cosmos/bank/v1beta1/supply/uglx",
             "pool": "https://galaxy.postcapitalist.io/staking/pool",
+            "blocktime": "6",
+            "blockRewardRate": 0.2
+        },
+        "price": "",
+        "staked_user": "",
+        "staked_amount": ""
+    },
+    {
+        "name": "IDEP",
+        "description": "",
+        "logo": "idep_white.png",
+        "url": "https://idep.network",
+        "address": "https://chadscan.com/validators/idepvaloper1nuxq0x84a95csyhrftgpe83acs0uq3x55w2mak",
+        "status": "active",
+        "uptime": "100",
+        "commision": "5",
+        "apr": {
+            "inflation": "https://lcd.idep.ezstaking.io/minting/inflation",
+            "communityTax": "https://lcd.idep.ezstaking.io/distribution/parameters",
+            "supply": "https://lcd.idep.ezstaking.io/cosmos/bank/v1beta1/supply/idep",
+            "pool": "https://lcd.idep.ezstaking.io/staking/pool",
             "blocktime": "6"
         },
         "price": "",
