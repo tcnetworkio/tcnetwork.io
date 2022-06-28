@@ -38,18 +38,28 @@ export const HomePage: FC<any> = (props) => {
           : chainPromises.push(fetchData(chain.apr.inflation));
       }
 
+      // index 1
       if (chain.apr.communityTax) {
         chainPromises.push(fetchData(chain.apr.communityTax));
       }
 
-      if (chain.apr.supply) {
-        chainPromises.push(fetchData(chain.apr.supply));
+      // index 2
+      if (chain.apr.isBasedOnEpoch) {
+        if (chain.apr.ePochProvision) {
+          chainPromises.push(fetchData(chain.apr.ePochProvision));
+        }
+      } else {
+        if (chain.apr.supply) {
+          chainPromises.push(fetchData(chain.apr.supply));
+        }
       }
 
+      // index 3
       if (chain.apr.pool) {
         chainPromises.push(fetchData(chain.apr.pool));
       }
 
+      // index 4
       if (chain.apr.blocktime) {
         chain.apr.blocktime.indexOf('http') === -1
           ? chainPromises.push({ block_time: +chain.apr.blocktime })
@@ -68,12 +78,20 @@ export const HomePage: FC<any> = (props) => {
 
           const inflation = +data[0].result;
           const communityTax = +((data[1].result || data[1].params).community_tax);
-          const blockTimeRate = data[4] ? 6 / data[4].block_time : 1;
-          const bondedRatio = (data[3].result || data[3].pool).bonded_tokens / data[2].amount.amount;
+          const blockTimeRate = data[4] && data[4].block_time ? 6 / data[4].block_time : 1;
+
+          const ePochProvision = chain.apr.isBasedOnEpoch ? data[2].epoch_mint_provision.amount : 0;
+          const bonded = chain.apr.isBasedOnEpoch
+            ? (data[3].result || data[3].pool).bonded_tokens
+            : (data[3].result || data[3].pool).bonded_tokens / data[2].amount.amount;
+
+          const blockRewardRate = chain.apr.blockRewardRate ? +chain.apr.blockRewardRate : 1;
 
           return {
             name: chain.name,
-            apr: (((inflation * (1 - communityTax) * blockTimeRate) / bondedRatio) * 100).toFixed(2)
+            apr: chain.apr.isBasedOnEpoch
+              ? (((365 * inflation * ePochProvision) / bonded) * 100 * (1 - 0.05)).toFixed(2)
+              : (((inflation * (1 - communityTax) * blockTimeRate) / bonded) * blockRewardRate * 100 * (1 - 0.05)).toFixed(2)
           };
         });
     });
