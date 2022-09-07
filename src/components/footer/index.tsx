@@ -1,11 +1,12 @@
 import { FC } from 'react';
-import LogoIcon from '../../assets/icons/logo.svg';
+import LogoIcon from '../../assets/icons/flavor.svg';
 
 export const Footer: FC<any> = (props) => (
   <footer id="footer">
     <div className="footer">
       <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <div className="navbar-brand"><img src={LogoIcon} width={41} height={38} alt="" className="d-inline-block align-top" />
+        <div className="navbar-brand" >
+          <img src={LogoIcon} width={41} height={38} alt="" className="d-inline-block align-top" style={{ borderRadius: '100%', border: '1px solid #e19605' }} />
           TC NETWORK
         </div>
         <div className="based">
