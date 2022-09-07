@@ -6,6 +6,7 @@ import BlockIcon from '../../assets/icons/block.svg';
 import EducationIcon from '../../assets/icons/education.svg';
 import AlignmentIcon from '../../assets/icons/alignment.svg';
 import TransparencyIcon from '../../assets/icons/transparency.svg';
+import EvmosStaking from '../../assets/icons/evmos-staking.jpg';
 import mainnetValidators from '../../data/mainnet.json';
 import testnetValidators from '../../data/testnet.json';
 import classNames from 'classnames';
@@ -90,8 +91,8 @@ export const HomePage: FC<any> = (props) => {
           return {
             name: chain.name,
             apr: chain.apr.isBasedOnEpoch
-              ? (((365 * inflation * ePochProvision) / bonded) * 100 * (1 - 0.05)).toFixed(2)
-              : (((inflation * (1 - communityTax) * blockTimeRate) / bonded) * blockRewardRate * 100 * (1 - 0.05)).toFixed(2)
+              ? (((365 * inflation * ePochProvision) / bonded) * 100).toFixed(2)
+              : (((inflation * (1 - communityTax) * blockTimeRate) / bonded) * blockRewardRate * 100).toFixed(2)
           };
         });
     });
@@ -103,10 +104,17 @@ export const HomePage: FC<any> = (props) => {
   }, []);
 
   return (
+
     <div className='home'>
+      <div className='container'>
+        <div className='col-lg-12 m-auto text-center pt-4'>
+          <img src={EvmosStaking} width='90%' className='' />
+        </div>
+      </div>
+
       <Element name='scroll-airdrop' />
-      <section id='intro'>
-        <div className='container'>
+      <section id='intro' className='pt-4'>
+        <div className='container pt-0'>
           <div className='row'>
             <div className='col-lg-6'>
               <h1>Cosmos Airdrops</h1>
@@ -148,7 +156,7 @@ export const HomePage: FC<any> = (props) => {
                 building dApps and supporting Cosmos projects.
               </p>
               <br></br>
-              <a href='/stake' rel='noreferrer' className='btn btn-primary btn-lg'>Staking Now</a>
+              <a href='https://stake.tcnetwork.io' rel='noreferrer' className='btn btn-primary btn-lg'>Staking Now</a>
             </div>
           </div>
         </div>
