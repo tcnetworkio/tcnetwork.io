@@ -130,5 +130,61 @@
         "price": "",
         "staked_user": "",
         "staked_amount": ""
+    },
+    {
+        "name": "Hypersign",
+        "description": "",
+        "logo": "hypersign.jpg",
+        "url": "https://hypersign.id/",
+        "address": "https://explorer.hypersign.id/hypersign-testnet/staking/hidvaloper16re2zprhnekq62qmcuh7v0dxtsa7le3nmyq8zs",
+        "status": "active",
+        "uptime": "100",
+        "commision": "5",
+        "apr": null,
+        "price": "",
+        "staked_user": "",
+        "staked_amount": ""
+    },
+    {
+        "name": "Gitopia",
+        "description": "",
+        "logo": "gitopia.png",
+        "url": "https://gitopia.com/",
+        "address": "https://explorer.gitopia.com/validators",
+        "status": "active",
+        "uptime": "100",
+        "commision": "5",
+        "apr": null,
+        "price": "",
+        "staked_user": "",
+        "staked_amount": ""
+    },
+    {
+        "name": "MUN",
+        "description": "",
+        "logo": "mun.jpg",
+        "url": "https://mun.money/",
+        "address": "",
+        "status": "active",
+        "uptime": "100",
+        "commision": "5",
+        "apr": null,
+        "price": "",
+        "staked_user": "",
+        "staked_amount": ""
+    },
+    {
+        "name": "Teritori",
+        "description": "",
+        "logo": "teritori.jpg",
+        "url": "https://teritori.com/",
+        "address": "",
+        "status": "active",
+        "uptime": "100",
+        "commision": "5",
+        "apr": null,
+        "price": "",
+        "staked_user": "",
+        "staked_amount": ""
     }
 ]
