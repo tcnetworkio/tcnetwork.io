@@ -267,14 +267,11 @@
         "uptime": "100",
         "commision": "5",
         "apr": {
-            "isBasedOnEpoch": true,
-            "ePochProvision": "https://rest.bd.evmos.org:1317/evmos/inflation/v1/epoch_mint_provision",
-            "inflation_distribution": "https://rest.bd.evmos.org:1317/evmos/inflation/v1/params",
-            "inflation": "0.13",
-            "communityTax": "https://api.mainnet.rebus.money:1317/distribution/parameters",
-            "supply": "https://api.rebuschain.com:1317/cosmos/bank/v1beta1/supply/rebus",
-            "pool": "https://api.mainnet.rebus.money:1317/staking/pool",
-            "blocktime": "0.85"
+            "inflation": "https://rest.cosmos.directory/rebus/minting/inflation",
+            "communityTax": "https://rest.cosmos.directory/rebus/distribution/parameters",
+            "supply": "https://rest.cosmos.directory/rebus/cosmos/bank/v1beta1/supply/arebus",
+            "pool": "https://rest.cosmos.directory/rebus/staking/pool",
+            "blocktime": "6"
         },
         "price": "",
         "staked_user": "",
