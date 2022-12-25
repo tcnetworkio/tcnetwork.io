@@ -1,8 +1,8 @@
-# TC NETWORK
+# About Us
 
-⭐️  TC Network is a group of technical developers participating in #Cosmos blockchains, providing staking services, building dApps and supporting Cosmos projects.
+⭐️  TC Network is a group of developers participating in #Cosmos blockchains, providing staking and tracking services, building tools and supporting Cosmos community.
 
-Website: https://tcnetwork.io \
-Link: https://linktr.ee/offical.tcnetwork \
-Telegram: \
-English: https://t.me/tcnetwork_en | Vietnam: https://t.me/tcnetwork_vn
+- Website: <https://tcnetwork.io>
+- Tweeter: <https://twitter.com/TCNetwork_io>
+- Telegram: <https://t.me/tcnetwork_io>
+- Github: <https://github.com/tcnetworkio>
