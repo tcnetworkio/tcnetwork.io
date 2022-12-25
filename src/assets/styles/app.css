@@ -942,9 +942,9 @@ section#contact p {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNjQgNTEyIj48cGF0aCBmaWxsPSIjM2YzY2Q4IiBkPSJNMjE1LjggODVIMjY0VjMuNkMyNTUuNyAyLjUgMjI3LjEgMCAxOTMuOCAwIDEyNC4zIDAgNzYuNyA0Mi40IDc2LjcgMTIwLjNWMTkySDB2OTFoNzYuN3YyMjloOTRWMjgzaDczLjZsMTEuNy05MWgtODUuM3YtNjIuN2MwLTI2LjMgNy4zLTQ0LjMgNDUuMS00NC4zeiIvPjwvc3ZnPg==)
 }
 
-/* .icon-github {
-  background-image: url(/_nuxt/img/../icons.svg)
-} */
+.icon-github {
+  background-image: url(../icons/github.svg)
+}
 
 .icon-twitter {
   background-image: url(../icons/twitter.svg)

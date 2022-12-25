@@ -40,13 +40,13 @@ export const Header: FC<any> = (props) => {
       <nav className="navbar navbar-light navbar-expand-lg">
         <div className="container">
           <NavLink to={'/'} className="navbar-brand nuxt-link-exact-active nuxt-link-active">
-            <img src={LogoIcon} width={41} height={38} alt="" className="d-inline-block align-top" />
+            <img src={LogoIcon} width={41} height={38} alt="" className="d-inline-block align-top mr-1" />
             TC NETWORK
           </NavLink>
           {
             location.pathname !== '/airdrop' && (
               <>
-                 <button type="button" aria-label="Toggle navigation" aria-controls="nav_collapse" data-toggle="collapse" data-target="#nav_collapse" aria-expanded="false" className="navbar-toggler"><span className="navbar-toggler-icon" /></button>
+                <button type="button" aria-label="Toggle navigation" aria-controls="nav_collapse" data-toggle="collapse" data-target="#nav_collapse" aria-expanded="false" className="navbar-toggler"><span className="navbar-toggler-icon" /></button>
                 <div id="nav_collapse" className="navbar-collapse collapse">
                   <ul className="navbar-nav ml-auto">
                     {menus.map((m, i) => (

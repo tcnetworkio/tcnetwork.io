@@ -106,11 +106,11 @@ export const HomePage: FC<any> = (props) => {
   return (
 
     <div className='home'>
-      <div className='container'>
+      {/* <div className='container'>
         <div className='col-lg-12 m-auto text-center pt-4'>
           <img src={EvmosStaking} width='90%' className='' />
         </div>
-      </div>
+      </div> */}
 
       <Element name='scroll-airdrop' />
       <section id='intro' className='pt-4'>
@@ -156,7 +156,7 @@ export const HomePage: FC<any> = (props) => {
                 building dApps and supporting Cosmos projects.
               </p>
               <br></br>
-              <a href='https://stake.tcnetwork.io' rel='noreferrer' className='btn btn-primary btn-lg'>Staking Now</a>
+              <a href='https://explorer.tcnetwork.io' rel='noreferrer' className='btn btn-primary btn-lg'>Staking With Us</a>
             </div>
           </div>
         </div>
@@ -178,7 +178,7 @@ export const HomePage: FC<any> = (props) => {
 
                   return (
                     <div key={i} className='col-md-6 col-lg-6 col-xl-4'>
-                      <a href={e.url} target='_blank' rel='noreferrer'>
+                      <a href={e.status === 'active' ? e.address : ''} target='_blank' rel='noreferrer'>
                         <div className={`card ${e.name.length > 8 ? 'pr-0' : ''}`}>
                           {/* <div className='badge-corner-right' hidden>
                             <h5>
@@ -223,12 +223,12 @@ export const HomePage: FC<any> = (props) => {
                           </div>
 
                           <div className='staking'>
-                            <p style={{ display: 'none' }} className='achieve' id='cosmos_token'>
+                            {/* <p style={{ display: 'none' }} className='achieve' id='cosmos_token'>
                               <img src={require(`../../assets/icons/staked.png`)} alt='' />
                             </p>
                             <a className='boxed-btn' href={e.address} target="_blank">
                               Stake Now
-                            </a>
+                            </a> */}
                           </div>
                         </div>
                       </a>
@@ -249,7 +249,7 @@ export const HomePage: FC<any> = (props) => {
 
                   return (
                     <div key={i} className='col-md-6 col-lg-6 col-xl-4'>
-                      <a href={e.url} target='_blank' rel='noreferrer'>
+                      <a href={e.status === 'active' ? e.address : ''} target='_blank' rel='noreferrer'>
                         <div className={`card ${e.name.length > 8 ? 'pr-0' : ''}`}>
                           <div className='card-logo'>
                             <img height={90} width={90} src={require(`../../assets/validators/${e.logo}`)} alt='' />
@@ -381,7 +381,7 @@ export const HomePage: FC<any> = (props) => {
               <div className='row justify-content-end mailbox'>
                 <div className='col-lg-8'>
                   <a
-                    href='https://t.me/tcnetwork_io'
+                    href='mailto:support@tcnetwork.io'
                     target='_blank'
                     rel='noreferrer'
                   >
