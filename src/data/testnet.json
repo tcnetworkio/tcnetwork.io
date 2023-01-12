@@ -214,5 +214,47 @@
         "price": "",
         "staked_user": "",
         "staked_amount": ""
+    },
+    {
+        "name": "Nibitu",
+        "description": "",
+        "logo": "nibiru.png",
+        "url": "https://nibiru.fi/",
+        "address": "https://testnet.explorer.tcnetwork.io/nibiru/validator/nibivaloper16re2zprhnekq62qmcuh7v0dxtsa7le3nctm7zy",
+        "status": "active",
+        "uptime": "100",
+        "commision": "5",
+        "apr": null,
+        "price": "",
+        "staked_user": "",
+        "staked_amount": ""
+    },
+    {
+        "name": "Nolus",
+        "description": "",
+        "logo": "nolus.png",
+        "url": "https://nolus.io/",
+        "address": "https://testnet.explorer.tcnetwork.io/nolus/validator/nolusvaloper16re2zprhnekq62qmcuh7v0dxtsa7le3nf45x7j",
+        "status": "active",
+        "uptime": "100",
+        "commision": "5",
+        "apr": null,
+        "price": "",
+        "staked_user": "",
+        "staked_amount": ""
+    },
+    {
+        "name": "Lava",
+        "description": "",
+        "logo": "lava.png",
+        "url": "https://lavanet.xyz/",
+        "address": "https://testnet.explorer.tcnetwork.io/lava/validator/lava@valoper16re2zprhnekq62qmcuh7v0dxtsa7le3n2ya72s",
+        "status": "active",
+        "uptime": "100",
+        "commision": "5",
+        "apr": null,
+        "price": "",
+        "staked_user": "",
+        "staked_amount": ""
     }
 ]
