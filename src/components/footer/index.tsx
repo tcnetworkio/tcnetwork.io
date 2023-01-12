@@ -13,8 +13,8 @@ export const Footer: FC<any> = (props) => (
 
         </div>
         <ul className="nav social">
-          <li><a href="https://t.me/tcnetwork_io" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i className="icon icon-telegram" /></a></li>
-          <li><a href="https://twitter.com/TCNetwork_io" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i className="icon icon-twitter" /></a></li>
+          <li><a href="https://t.me/tcnetworkio" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i className="icon icon-telegram" /></a></li>
+          <li><a href="https://twitter.com/tcnetworkio" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i className="icon icon-twitter" /></a></li>
           <li><a href="https://github.com/tcnetworkio" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className='icon icon-github'><i className="" /></a></li>
         </ul>
       </div>
