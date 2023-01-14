@@ -256,5 +256,19 @@
         "price": "",
         "staked_user": "",
         "staked_amount": ""
+    },
+    {
+        "name": "Loyal",
+        "description": "",
+        "logo": "loyal.svg",
+        "url": "https://www.joinloyal.io/",
+        "address": "https://testnet.explorer.tcnetwork.io/loyal/validator/loyalvaloper16re2zprhnekq62qmcuh7v0dxtsa7le3nphpqn2",
+        "status": "active",
+        "uptime": "100",
+        "commision": "5",
+        "apr": null,
+        "price": "",
+        "staked_user": "",
+        "staked_amount": ""
     }
 ]

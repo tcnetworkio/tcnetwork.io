@@ -222,14 +222,14 @@ export const HomePage: FC<any> = (props) => {
                             </div>
                           </div>
 
-                          <div className='staking'>
-                            {/* <p style={{ display: 'none' }} className='achieve' id='cosmos_token'>
+                          {/* <div className='staking'>
+                            <p style={{ display: 'none' }} className='achieve' id='cosmos_token'>
                               <img src={require(`../../assets/icons/staked.png`)} alt='' />
                             </p>
                             <a className='boxed-btn' href={e.address} target="_blank">
                               Stake Now
-                            </a> */}
-                          </div>
+                            </a>
+                          </div> */}
                         </div>
                       </a>
                     </div>
@@ -279,9 +279,9 @@ export const HomePage: FC<any> = (props) => {
                             </div>
                           </div>
 
-                          <div className='staking'>
+                          {/* <div className='staking'>
 
-                          </div>
+                          </div> */}
                         </div>
                       </a>
                     </div>
