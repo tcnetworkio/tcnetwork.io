@@ -25,7 +25,7 @@ export const HomePage: FC<any> = (props) => {
 
   useEffect(() => {
     const promises = mainnetValidators.map(chain => {
-      if (!chain.apr) {
+      if (!chain.apr || chain.status === 'inactive') {
         return {
           name: chain.name,
           apr: '0.00'
@@ -77,23 +77,32 @@ export const HomePage: FC<any> = (props) => {
             };
           }
 
-          const inflation = +data[0].result;
+          const inflation = +data[0].result || +data[0].inflation;
           const communityTax = +((data[1].result || data[1].params).community_tax);
           const blockTimeRate = data[4] && data[4].block_time ? 6 / data[4].block_time : 1;
+
+          let amount = 0;
+          if (chain.name === 'Dig Chain') {
+            amount = data[2].supply.find((x: any) => x.denom === 'udig')?.amount;
+          } else {
+            amount = data[2].amount ? data[2].amount.amount : data[2].amount;
+          }
 
           const ePochProvision = chain.apr.isBasedOnEpoch ? data[2].epoch_mint_provision.amount : 0;
           const bonded = chain.apr.isBasedOnEpoch
             ? (data[3].result || data[3].pool).bonded_tokens
-            : (data[3].result || data[3].pool).bonded_tokens / data[2].amount.amount;
+            : (data[3].result || data[3].pool).bonded_tokens / amount;
 
           const blockRewardRate = chain.apr.blockRewardRate ? +chain.apr.blockRewardRate : 1;
 
-          return {
+          const result = {
             name: chain.name,
             apr: chain.apr.isBasedOnEpoch
               ? (((365 * inflation * ePochProvision) / bonded) * 100).toFixed(2)
               : (((inflation * (1 - communityTax) * blockTimeRate) / bonded) * blockRewardRate * 100).toFixed(2)
           };
+
+          return result;
         });
     });
 

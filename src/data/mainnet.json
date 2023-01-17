@@ -130,10 +130,10 @@
         "uptime": "100",
         "commision": "5",
         "apr": {
-            "inflation": "https://api.cerberus.zone:1317/minting/inflation",
-            "communityTax": "https://api.cerberus.zone:1317/distribution/parameters",
+            "inflation": "https://api.cerberus.zone:1317/cosmos/mint/v1beta1/inflation",
+            "communityTax": "https://api.cerberus.zone:1317/cosmos/distribution/v1beta1/params",
             "supply": "https://api.cerberus.zone:1317/cosmos/bank/v1beta1/supply/ucrbrus",
-            "pool": "https://api.cerberus.zone:1317/staking/pool",
+            "pool": "https://api.cerberus.zone:1317/cosmos/staking/v1beta1/pool",
             "blocktime": "https://api.mintscan.io/v1/cerberus/block/blocktime"
         },
         "price": "",
@@ -150,10 +150,10 @@
         "uptime": "100",
         "commision": "5",
         "apr": {
-            "inflation": "https://api-1-dig.notional.ventures/minting/inflation",
-            "communityTax": "https://api-1-dig.notional.ventures/cosmos/distribution/v1beta1/params",
-            "supply": "https://api-1-dig.notional.ventures/cosmos/bank/v1beta1/supply/udig",
-            "pool": "https://api-1-dig.notional.ventures/cosmos/staking/v1beta1/pool",
+            "inflation": "https://rest.cosmos.directory/dig/cosmos/mint/v1beta1/inflation",
+            "communityTax": "https://rest.cosmos.directory/dig/cosmos/distribution/v1beta1/params",
+            "supply": "https://rest.cosmos.directory/dig/cosmos/bank/v1beta1/supply",
+            "pool": "https://rest.cosmos.directory/dig/cosmos/staking/v1beta1/pool",
             "blocktime": "6.8"
         },
         "price": "",
@@ -245,12 +245,12 @@
         "commision": "5",
         "apr": {
             "isBasedOnEpoch": true,
-            "ePochProvision": "https://rest.bd.evmos.org:1317/evmos/inflation/v1/epoch_mint_provision",
-            "inflation_distribution": "https://rest.bd.evmos.org:1317/evmos/inflation/v1/params",
+            "ePochProvision": "https://rest.evmos.tcnetwork.io/evmos/inflation/v1/epoch_mint_provision",
+            "inflation_distribution": "https://rest.evmos.tcnetwork.io/evmos/inflation/v1/params",
             "inflation": "0.533333334",
-            "communityTax": "https://rest.bd.evmos.org:1317/distribution/parameters",
-            "supply": "https://rest.bd.evmos.org:1317/cosmos/bank/v1beta1/supply/aevmos",
-            "pool": "https://rest.bd.evmos.org:1317/staking/pool",
+            "communityTax": "https://rest.evmos.tcnetwork.io/cosmos/distribution/v1beta1/params",
+            "supply": "https://rest.evmos.tcnetwork.io/cosmos/bank/v1beta1/supply/aevmos",
+            "pool": "https://rest.evmos.tcnetwork.io/cosmos/staking/v1beta1/pool",
             "blocktime": "1.85"
         },
         "price": "",
@@ -273,6 +273,19 @@
             "pool": "https://rest.cosmos.directory/rebus/staking/pool",
             "blocktime": "6"
         },
+        "price": "",
+        "staked_user": "",
+        "staked_amount": ""
+    },
+    {
+        "name": "Loyal",
+        "description": "",
+        "logo": "loyal.svg",
+        "url": "https://www.joinloyal.io/",
+        "address": "https://explorer.tcnetwork.io/loyal/validator/loyalvaloper1z95kj7ge4tpa3fvd3naadq2g89ddkcuprea93g",
+        "status": "active",
+        "uptime": "100",
+        "commision": "5",
         "price": "",
         "staked_user": "",
         "staked_amount": ""
