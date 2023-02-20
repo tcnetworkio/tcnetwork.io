@@ -82,10 +82,22 @@ export const HomePage: FC<any> = (props) => {
           const blockTimeRate = data[4] && data[4].block_time ? 6 / data[4].block_time : 1;
 
           let amount = 0;
-          if (chain.name === 'Dig Chain') {
-            amount = data[2].supply.find((x: any) => x.denom === 'udig')?.amount;
-          } else {
-            amount = data[2].amount ? data[2].amount.amount : data[2].amount;
+          switch (chain.name) {
+            case 'Dig Chain':
+              amount = data[2].supply.find((x: any) => x.denom === 'udig')?.amount;
+              break;
+
+            case 'Planq':
+              amount = data[2].supply.find((x: any) => x.denom === 'aplanq')?.amount;
+              break;
+
+            case 'Teritori':
+              amount = data[2].supply.find((x: any) => x.denom === 'utori')?.amount;
+              break;
+
+            default:
+              amount = data[2].amount ? data[2].amount.amount : data[2].amount;
+              break;
           }
 
           const ePochProvision = chain.apr.isBasedOnEpoch ? data[2].epoch_mint_provision.amount : 0;

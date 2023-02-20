@@ -126,7 +126,7 @@
         "logo": "cerberus.png",
         "url": "https://cerberus.zone",
         "address": "https://explorer.tcnetwork.io/cerberus/validator/cerberusvaloper1380ee97fmsr9kfdmy80g6ptxj3k90g04tecq89",
-        "status": "active",
+        "status": "inactive",
         "uptime": "100",
         "commision": "5",
         "apr": {
@@ -267,7 +267,7 @@
         "uptime": "100",
         "commision": "5",
         "apr": {
-            "inflation": "https://rest.cosmos.directory/rebus/minting/inflation",
+            "inflation": "https://rest.cosmos.directory/rebus/cosmos/mint/v1beta1/inflation",
             "communityTax": "https://rest.cosmos.directory/rebus/distribution/parameters",
             "supply": "https://rest.cosmos.directory/rebus/cosmos/bank/v1beta1/supply/arebus",
             "pool": "https://rest.cosmos.directory/rebus/staking/pool",
@@ -286,6 +286,66 @@
         "status": "active",
         "uptime": "100",
         "commision": "5",
+        "price": "",
+        "staked_user": "",
+        "staked_amount": ""
+    },
+    {
+        "name": "Planq",
+        "description": "",
+        "logo": "planq.svg",
+        "url": "https://planq.network/",
+        "address": "https://explorer.tcnetwork.io/planq/validator/plqvaloper1jwrvrptsqv40vk057n3cvpe7dvfdr7y7xf0nmr",
+        "status": "active",
+        "uptime": "100",
+        "commision": "5",
+        "apr": {
+            "inflation": "https://rest.planq.network/cosmos/mint/v1beta1/inflation",
+            "communityTax": "https://rest.planq.network/cosmos/distribution/v1beta1/params",
+            "supply": "https://rest.planq.network/cosmos/bank/v1beta1/supply?pagination.limit=100",
+            "pool": "https://rest.planq.network/cosmos/staking/v1beta1/pool",
+            "blocktime": "6"
+        },
+        "price": "",
+        "staked_user": "",
+        "staked_amount": ""
+    },
+    {
+        "name": "Teritori",
+        "description": "",
+        "logo": "teritori.jpg",
+        "url": "https://teritori.com/",
+        "address": "https://explorer.tcnetwork.io/teritori/validator/torivaloper10mwndz506nr6rsct0ludv3q6fjyfzva0c0yahr",
+        "status": "active",
+        "uptime": "100",
+        "commision": "5",
+        "apr": {
+            "inflation": "33,33",
+            "communityTax": "https://rest.cosmos.directory/teritori/cosmos/distribution/v1beta1/params",
+            "supply": "https://rest.cosmos.directory/teritori/cosmos/bank/v1beta1/supply?pagination.limit=100",
+            "pool": "https://rest.cosmos.directory/teritori/cosmos/staking/v1beta1/pool",
+            "blocktime": "6"
+        },
+        "price": "",
+        "staked_user": "",
+        "staked_amount": ""
+    },
+    {
+        "name": "Bluzelle",
+        "description": "",
+        "logo": "bluzelle.svg",
+        "url": "https://bluzelle.com",
+        "address": "https://explorer.tcnetwork.io/bluzelle/validator/bluzellevaloper1a02e987amz3k0sz2qrwp70jv46934202gelz2m",
+        "status": "active",
+        "uptime": "100",
+        "commision": "5",
+        "apr": {
+            "inflation": "https://bluzelle-api.genznodes.dev/minting/inflation",
+            "communityTax": "https://bluzelle-api.genznodes.dev/distribution/parameters",
+            "supply": "https://bluzelle-api.genznodes.dev/cosmos/bank/v1beta1/supply/ubnt",
+            "pool": "https://bluzelle-api.genznodes.dev/cosmos/staking/v1beta1/pool",
+            "blocktime": "6"
+        },
         "price": "",
         "staked_user": "",
         "staked_amount": ""
