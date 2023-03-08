@@ -1,0 +1,322 @@
+[
+  {
+    "name": "Agoric",
+    "website": "https://agoric.com/",
+    "image": "/image/agoric.png",
+    "explorerId": "",
+    "status": "inactive",
+    "type": "mainnet"
+  },
+  {
+    "name": "Crescent",
+    "website": "https://crescent.network/",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/crescent/images/cre.svg",
+    "explorerId": "",
+    "status": "inactive",
+    "type": "mainnet"
+  },
+  {
+    "name": "Certik",
+    "website": "https://www.shentu.technology/",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/shentu/images/ctk.png",
+    "explorerId": "",
+    "status": "inactive",
+    "type": "mainnet"
+  },
+  {
+    "name": "Chihuahua",
+    "website": "https://www.chihuahua.wtf/",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/chihuahua/images/huahua.svg",
+    "explorerId": "",
+    "status": "inactive",
+    "type": "mainnet"
+  },
+  {
+    "name": "Odin",
+    "website": "https://odinprotocol.io/",
+    "image": "/image/odin.jpg",
+    "explorerId": "",
+    "status": "inactive",
+    "type": "mainnet"
+  },
+  {
+    "name": "Galaxy",
+    "website": "https://galaxychain.zone/",
+    "image": "/image/galaxy.jpeg",
+    "explorerId": "",
+    "status": "inactive",
+    "type": "mainnet"
+  },
+  {
+    "name": "Cerberus",
+    "website": "https://cerberus.zone/",
+    "image": "/image/cerberus.png",
+    "explorerId": "",
+    "status": "inactive",
+    "type": "mainnet"
+  },
+  {
+    "name": "Evmos",
+    "website": "https://evmos.org/",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg",
+    "explorerId": "evmos",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Rebus",
+    "website": "https://www.rebuschain.com/",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/rebus/images/rebus.svg",
+    "explorerId": "rebus",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Dig Chain",
+    "website": "http://www.digchain.org/",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png",
+    "explorerId": "dig",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Desmos",
+    "website": "https://www.desmos.network/",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/desmos/images/dsm.svg",
+    "explorerId": "desmos",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Gravity Bridge",
+    "website": "https://www.gravitybridge.net/",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
+    "explorerId": "gravitybridge",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Nomic",
+    "website": "https://nomic.io/",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.svg",
+    "explorerId": "",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Idep",
+    "website": "https://idep.network/",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.svg",
+    "explorerId": "idep",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Teritori",
+    "website": "https://teritori.com/",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/teritori/images/utori.svg",
+    "explorerId": "teritori",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Loyal",
+    "website": "https://www.joinloyal.io/",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/loyal/images/lyl.svg",
+    "explorerId": "loyal",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Planq",
+    "website": "https://planq.network/",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/planq/images/planq.svg",
+    "explorerId": "planq",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "ACRE Chain",
+    "website": "https://arable.finance",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/acrechain/images/acre.svg",
+    "explorerId": "acrechain",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Bluzelle",
+    "website": "https://bluzelle.com",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/bluzelle/images/bluzelle.svg",
+    "explorerId": "bluzelle",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "8Ball",
+    "website": "https://8ball.info",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png",
+    "explorerId": "8ball",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Game",
+    "website": "https://gamenet.one/",
+    "image": "/image/game.png",
+    "explorerId": "",
+    "status": "inactive",
+    "type": "testnet"
+  },
+  {
+    "name": "Anone",
+    "website": "https://another-1.io/",
+    "image": "/image/anone.jpg",
+    "explorerId": "",
+    "status": "inactive",
+    "type": "testnet"
+  },
+  {
+    "name": "Crescent",
+    "website": "https://crescent.network/",
+    "image": "/image/cresent.jpeg",
+    "explorerId": "",
+    "status": "inactive",
+    "type": "testnet"
+  },
+  {
+    "name": "Cosmic Horizon",
+    "website": "https://cosmic-horizon.com/",
+    "image": "/image/cosmic.jpeg",
+    "explorerId": "",
+    "status": "inactive",
+    "type": "testnet"
+  },
+  {
+    "name": "Galaxy",
+    "website": "https://galaxychain.zone/",
+    "image": "/image/galaxy.jpeg",
+    "explorerId": "",
+    "status": "inactive",
+    "type": "testnet"
+  },
+  {
+    "name": "Sei Network",
+    "website": "https://www.seinetwork.io/",
+    "image": "/image/sei.jpeg",
+    "explorerId": "",
+    "status": "inactive",
+    "type": "testnet"
+  },
+  {
+    "name": "Teritori",
+    "website": "https://teritori.com/",
+    "image": "/image/teritori.jpg",
+    "explorerId": "",
+    "status": "inactive",
+    "type": "testnet"
+  },
+  {
+    "name": "Quicksilver",
+    "website": "https://quicksilver.zone/",
+    "image": "/image/quicksilver.jpeg",
+    "explorerId": "",
+    "status": "inactive",
+    "type": "testnet"
+  },
+  {
+    "name": "OKP4",
+    "website": "https://okp4.network/",
+    "image": "/image/okp4.png",
+    "explorerId": "",
+    "status": "inactive",
+    "type": "testnet"
+  },
+  {
+    "name": "Aura Network",
+    "website": "https://aura.network/",
+    "image": "https://raw.githubusercontent.com/obajay/explorer/master/logo/Aura.png",
+    "explorerId": "aura",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Defund",
+    "website": "https://www.defund.app/",
+    "image": "https://raw.githubusercontent.com/obajay/explorer/master/logo/defund.png",
+    "explorerId": "defund",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Hypersign",
+    "website": "https://hypersign.id/",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/hypersigntestnet/images/hypersign.png",
+    "explorerId": "hypersign",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Ollo Station",
+    "website": "https://ollostation.zone/",
+    "image": "https://raw.githubusercontent.com/obajay/explorer/master/logo/ollo.png",
+    "explorerId": "ollo",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Gitopia",
+    "website": "https://gitopia.com/",
+    "image": "https://raw.githubusercontent.com/kj89/testnet_manuals/main/pingpub/logos/gitopia.png",
+    "explorerId": "gitopia",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "MUN",
+    "website": "https://mun.money/",
+    "image": "https://raw.githubusercontent.com/vigorousdeveloper/explorer_assets/main/icon.svg?sanitize=true",
+    "explorerId": "mun",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Nibiru",
+    "website": "https://nibiru.fi/",
+    "image": "https://raw.githubusercontent.com/obajay/explorer/master/logo/nibiru.png",
+    "explorerId": "nibiru",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Nolus",
+    "website": "https://nolus.io/",
+    "image": "https://raw.githubusercontent.com/kj89/testnet_manuals/main/pingpub/logos/nolus.png",
+    "explorerId": "nolus",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Lava",
+    "website": "https://lavanet.xyz/",
+    "image": "https://raw.githubusercontent.com/Nodeist/Kurulumlar/main/logos/lava.png",
+    "explorerId": "lava",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Loyal",
+    "website": "https://www.joinloyal.io/",
+    "image": "https://ping-pub.joinloyal.io/logos/loyal.svg",
+    "explorerId": "loyal",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Quasar",
+    "website": "https://www.quasar.fi/",
+    "image": "https://testnet.ping.pub/logos/quasar.png",
+    "explorerId": "quasar",
+    "status": "active",
+    "type": "testnet"
+  }
+]

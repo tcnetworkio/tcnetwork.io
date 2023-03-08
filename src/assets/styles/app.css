@@ -609,7 +609,7 @@ section#portfolio a:hover {
 }
 
 section#portfolio .card {
-  padding: 20px;
+  padding: 15px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -619,7 +619,7 @@ section#portfolio .card {
   align-items: center;
   border-color: #e9e8f4;
   border-radius: 10px;
-  margin: 15px 0
+  margin: 10px 0
 }
 
 @media (max-width:991.98px) {
@@ -661,8 +661,8 @@ section#portfolio .card:hover .status-h {
 }
 
 section#portfolio .card-title {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
   letter-spacing: .4px;
   color: #F87907;
 }
@@ -670,7 +670,7 @@ section#portfolio .card-title {
 @media (max-width:767.98px) {
   section#portfolio .card-title {
     font-size: 16px;
-    margin-bottom: 15px
+    /* margin-bottom: 15px */
   }
 }
 
@@ -706,7 +706,7 @@ section#portfolio .card-logo {
 
 section#portfolio .card-body {
   padding: 0;
-  height: 108px;
+  /* height: 108px; */
 }
 
 section#portfolio .status-h {
@@ -1875,4 +1875,37 @@ a:hover {
 
 .nav-link {
   cursor: pointer;
+}
+
+.border,
+.border-1 {
+  border-width: 1px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.relative {
+  position: relative;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.h-9 {
+  height: 2.25rem;
 }

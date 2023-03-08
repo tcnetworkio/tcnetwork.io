@@ -6,105 +6,28 @@ import BlockIcon from '../../assets/icons/block.svg';
 import EducationIcon from '../../assets/icons/education.svg';
 import AlignmentIcon from '../../assets/icons/alignment.svg';
 import TransparencyIcon from '../../assets/icons/transparency.svg';
-import EvmosStaking from '../../assets/icons/evmos-staking.jpg';
-import mainnetValidators from '../../data/mainnet.json';
-import testnetValidators from '../../data/testnet.json';
-import classNames from 'classnames';
 import { Element } from 'react-scroll';
-import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { Validator } from './validator';
 
-const fetchData = (url: string, options = undefined) => {
-  return fetch(url, options)
-    .then(res => res.json())
-    .catch((error) => console.error(error));
+
+const loadNetworks = async () => {
+  return await fetch('/network.json', {
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    }
+  }).then(response => response.json());
 }
 
 export const HomePage: FC<any> = (props) => {
-  const [validatorParams, setValidatorParams] = useState<any[]>([]);
+  const [networks, setNetworks] = useState<any[]>([]);
 
   useEffect(() => {
-    const promises = mainnetValidators.map(chain => {
-      if (!chain.apr) {
-        return {
-          name: chain.name,
-          apr: '0.00'
-        };
-      }
-
-      const chainPromises = [];
-      if (chain.apr.inflation) {
-        chain.apr.inflation.indexOf('http') === -1
-          ? chainPromises.push({ result: +chain.apr.inflation })
-          : chainPromises.push(fetchData(chain.apr.inflation));
-      }
-
-      // index 1
-      if (chain.apr.communityTax) {
-        chainPromises.push(fetchData(chain.apr.communityTax));
-      }
-
-      // index 2
-      if (chain.apr.isBasedOnEpoch) {
-        if (chain.apr.ePochProvision) {
-          chainPromises.push(fetchData(chain.apr.ePochProvision));
-        }
-      } else {
-        if (chain.apr.supply) {
-          chainPromises.push(fetchData(chain.apr.supply));
-        }
-      }
-
-      // index 3
-      if (chain.apr.pool) {
-        chainPromises.push(fetchData(chain.apr.pool));
-      }
-
-      // index 4
-      if (chain.apr.blocktime) {
-        chain.apr.blocktime.indexOf('http') === -1
-          ? chainPromises.push({ block_time: +chain.apr.blocktime })
-          : chainPromises.push(fetchData(chain.apr.blocktime));
-      }
-
-      return Promise
-        .all(chainPromises)
-        .then(data => {
-          if (!data[0] || !data[1] || !data[2] || !data[3]) {
-            return {
-              name: chain.name,
-              apr: 0.00
-            };
-          }
-
-          const inflation = +data[0].result;
-          const communityTax = +((data[1].result || data[1].params).community_tax);
-          const blockTimeRate = data[4] && data[4].block_time ? 6 / data[4].block_time : 1;
-
-          const ePochProvision = chain.apr.isBasedOnEpoch ? data[2].epoch_mint_provision.amount : 0;
-          const bonded = chain.apr.isBasedOnEpoch
-            ? (data[3].result || data[3].pool).bonded_tokens
-            : (data[3].result || data[3].pool).bonded_tokens / data[2].amount.amount;
-
-          const blockRewardRate = chain.apr.blockRewardRate ? +chain.apr.blockRewardRate : 1;
-
-          return {
-            name: chain.name,
-            apr: chain.apr.isBasedOnEpoch
-              ? (((365 * inflation * ePochProvision) / bonded) * 100).toFixed(2)
-              : (((inflation * (1 - communityTax) * blockTimeRate) / bonded) * blockRewardRate * 100).toFixed(2)
-          };
-        });
-    });
-
-    Promise
-      .all(promises)
-      .then(validatorParams => setValidatorParams(validatorParams))
-
+    loadNetworks().then(data => setNetworks(data))
   }, []);
 
   return (
-
     <div className='home'>
       {/* <div className='container'>
         <div className='col-lg-12 m-auto text-center pt-4'>
@@ -166,130 +89,31 @@ export const HomePage: FC<any> = (props) => {
         <section id='portfolio'>
           <div className='container'>
             <h3>Portfolio | Joined as the Validator!</h3>
-            <div className='row'>
-              {
-                mainnetValidators.map((e: any, i) => {
-                  var chainStatus = classNames({
-                    'status-mainnet-active': e.status === 'active',
-                    'status-mainnet-inactive': e.status === 'inactive',
-                  });
+            {networks && networks.length && <Validator networks={networks} type='mainnet' />}
 
-                  const validatorParam = validatorParams.find(x => x.name === e.name);
-
-                  return (
-                    <div key={i} className='col-md-6 col-lg-6 col-xl-4'>
-                      <a href={e.status === 'active' ? e.address : ''} target='_blank' rel='noreferrer'>
-                        <div className={`card ${e.name.length > 8 ? 'pr-0' : ''}`}>
-                          {/* <div className='badge-corner-right' hidden>
-                            <h5>
-                              <span id='badge-apy-cosmos' className='badge badge-pill badge-success badge-font'>
-                                APR -%
-                              </span>
-                            </h5>
-                          </div>
-                          <div className='badge-corner-left' hidden>
-                            <h5>
-                              <span id='badge-price-cosmos' className='badge badge-dark badge-font'>
-                                $ -
-                              </span>
-                            </h5>
-                          </div> */}
-                          <div className='card-logo'>
-                            <img height={90} width={90} src={require(`../../assets/validators/${e.logo}`)} alt='' />
-                          </div>
-                          <div className='card-body'>
-                            <div className='card-title'>
-                              {e.name}{' '}
-                              <span className='dot has-tooltip' data-original-title='null'>
-                                <svg
-                                  data-v-21c5d077
-                                  data-v-f322c9fc
-                                  width={10}
-                                  height={10}
-                                  viewBox='0 0 8 8'
-                                  fill='var(--dot-color, rgba(59, 66, 125, 0.12))'
-                                  xmlns='http://www.w3.org/2000/svg'
-                                  className={chainStatus}
-                                >
-                                  <circle data-v-21c5d077 cx={4} cy={4} r={4} />
-                                </svg>
-                              </span>
-                            </div>
-                            <div className='card-status'>
-                              <div className='status-h'>APR: <span className='apr'> {validatorParam ? validatorParam.apr : 0.00}%</span></div>
-                              <div className='status-h'>Uptime: <span className='uptime'>{e.uptime}%</span></div>
-                              <div className='status-h'>Commission: {e.commision}%</div>
-                            </div>
-                          </div>
-
-                          {/* <div className='staking'>
-                            <p style={{ display: 'none' }} className='achieve' id='cosmos_token'>
-                              <img src={require(`../../assets/icons/staked.png`)} alt='' />
-                            </p>
-                            <a className='boxed-btn' href={e.address} target="_blank">
-                              Stake Now
-                            </a>
-                          </div> */}
-                        </div>
-                      </a>
-                    </div>
-                  );
-                })
-              }
-            </div>
-
+            {/* <h4>Joined Testnet</h4> */}
             <div className='testnet'>Testnet</div>
-            <div className='row'>
-              {
-                testnetValidators.map((e: any, i) => {
-                  var chainStatus = classNames({
-                    'status-testnet-active': e.status === 'active',
-                    'status-testnet-inactive': e.status === 'inactive',
-                  });
+            {networks && networks.length && <Validator networks={networks} type='testnet' />}
 
-                  return (
-                    <div key={i} className='col-md-6 col-lg-6 col-xl-4'>
-                      <a href={e.status === 'active' ? e.address : ''} target='_blank' rel='noreferrer'>
-                        <div className={`card ${e.name.length > 8 ? 'pr-0' : ''}`}>
-                          <div className='card-logo'>
-                            <img height={90} width={90} src={require(`../../assets/validators/${e.logo}`)} alt='' />
-                          </div>
-                          <div className='card-body'>
-                            <div className='card-title'>
-                              {e.name}{' '}
-                              <span className='dot has-tooltip' data-original-title='null'>
-                                <svg
-                                  data-v-21c5d077
-                                  data-v-f322c9fc
-                                  width={10}
-                                  height={10}
-                                  viewBox='0 0 8 8'
-                                  fill='var(--dot-color, rgba(59, 66, 125, 0.12))'
-                                  xmlns='http://www.w3.org/2000/svg'
-                                  className={chainStatus}
-                                >
-                                  <circle data-v-21c5d077 cx={4} cy={4} r={4} />
-                                </svg>
-                              </span>
-                            </div>
-                            <div className='card-status'>
-                              <div className='status-h'>APR: <span className='apr'> 0%</span></div>
-                              <div className='status-h'>Uptime: <span className='uptime'>{e.uptime}%</span></div>
-                              <div className='status-h'>Commission: {e.commision}%</div>
-                            </div>
-                          </div>
-
-                          {/* <div className='staking'>
-
-                          </div> */}
-                        </div>
-                      </a>
-                    </div>
-                  );
-                })
-              }
+            <div className='row d-flex align-items-center' style={{ marginTop: '10px' }}>
+              <div className='col-lg-6'>
+                <img src={'https://interchainnfts.dev/assets/img/banner.e3623744.png'} width={350} className='d-inline-block align-top' />
+              </div>
+              <div className='col-lg-6 align-top'>
+                <h3>Game of NFTs Explorer</h3>
+                <p>
+                  Game of NFTs (GoN) is a two-phase event with public incentivized testing and a hackathon
+                  where you can test the Interchain NFTs and build innovative NFT applications.
+                  <br />
+                  You can find the detailed <a href='https://interchainnfts.dev/gon/' target='_blank' rel='noreferrer'>Here</a>.
+                </p>
+                <a href='https://gon.tcnetwork.io' rel='noreferrer' className='btn btn-primary btn-lg'>GoN Explorer</a>
+              </div>
             </div>
           </div>
+
+
+
         </section>
       </Element>
 
