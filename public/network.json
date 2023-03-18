@@ -160,6 +160,14 @@
     "type": "mainnet"
   },
   {
+    "name": "Aura Network",
+    "website": "https://aura.network/",
+    "image": "https://raw.githubusercontent.com/obajay/explorer/master/logo/Aura.png",
+    "explorerId": "aura",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
     "name": "Game",
     "website": "https://gamenet.one/",
     "image": "/image/game.png",
