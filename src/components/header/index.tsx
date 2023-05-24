@@ -10,16 +10,24 @@ const menus = [
     name: 'scroll-home'
   },
   {
-    title: 'Airdrops',
-    name: 'scroll-airdrop'
+    title: 'NFT',
+    name: 'scroll-nft'
   },
   {
     title: 'Staking',
     name: 'scroll-staking'
   },
   {
+    title: 'Bot',
+    name: 'scroll-bot'
+  },
+  {
     title: 'Validators',
     name: 'scroll-validator'
+  },
+  {
+    title: 'Airdrops',
+    name: 'scroll-airdrop'
   },
   {
     title: 'About Us',
@@ -29,7 +37,6 @@ const menus = [
 
 export const Header: FC<any> = (props) => {
   const location = useLocation();
-  console.log(location);
 
   return (
     <header id="header">

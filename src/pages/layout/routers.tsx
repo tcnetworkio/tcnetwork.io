@@ -8,7 +8,7 @@ export const routers = [
     index: true,
   },
   {
-    path: '/stake',
+    path: '/nft',
     component: <HomePage />,
   },
   {
@@ -16,7 +16,15 @@ export const routers = [
     component: <HomePage />,
   },
   {
+    path: '/stake',
+    component: <HomePage />,
+  },
+  {
     path: '/validator',
+    component: <HomePage />,
+  },
+  {
+    path: '/bot',
     component: <HomePage />,
   },
   {

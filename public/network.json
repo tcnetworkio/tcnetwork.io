@@ -92,7 +92,7 @@
     "website": "https://www.gravitybridge.net/",
     "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/gravitybridge/images/grav.svg",
     "explorerId": "gravitybridge",
-    "status": "active",
+    "status": "inactive",
     "type": "mainnet"
   },
   {
@@ -164,6 +164,14 @@
     "website": "https://aura.network/",
     "image": "https://raw.githubusercontent.com/obajay/explorer/master/logo/Aura.png",
     "explorerId": "aura",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Gitopia",
+    "website": "https://gitopia.com/",
+    "image": "https://raw.githubusercontent.com/kj89/testnet_manuals/main/pingpub/logos/gitopia.png",
+    "explorerId": "gitopia",
     "status": "active",
     "type": "mainnet"
   },
@@ -272,14 +280,6 @@
     "type": "testnet"
   },
   {
-    "name": "Gitopia",
-    "website": "https://gitopia.com/",
-    "image": "https://raw.githubusercontent.com/kj89/testnet_manuals/main/pingpub/logos/gitopia.png",
-    "explorerId": "gitopia",
-    "status": "active",
-    "type": "testnet"
-  },
-  {
     "name": "MUN",
     "website": "https://mun.money/",
     "image": "https://raw.githubusercontent.com/vigorousdeveloper/explorer_assets/main/icon.svg?sanitize=true",
@@ -324,6 +324,22 @@
     "website": "https://www.quasar.fi/",
     "image": "https://testnet.ping.pub/logos/quasar.png",
     "explorerId": "quasar",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "SAO Network",
+    "website": "https://sao.network/",
+    "image": "https://avatars.githubusercontent.com/u/89438924?s=200&v=4",
+    "explorerId": "sao",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Cascadia",
+    "website": "https://cascadia.foundation/",
+    "image": "https://avatars.githubusercontent.com/u/98357024?s=200&v=4",
+    "explorerId": "cascadia",
     "status": "active",
     "type": "testnet"
   }
