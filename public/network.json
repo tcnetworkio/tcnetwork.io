@@ -98,7 +98,7 @@
   {
     "name": "Nomic",
     "website": "https://nomic.io/",
-    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nomic.svg",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nomic/images/nom.svg",
     "explorerId": "",
     "status": "active",
     "type": "mainnet"
@@ -162,7 +162,7 @@
   {
     "name": "Aura Network",
     "website": "https://aura.network/",
-    "image": "https://raw.githubusercontent.com/obajay/explorer/master/logo/Aura.png",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.svg",
     "explorerId": "aura",
     "status": "active",
     "type": "mainnet"
@@ -172,6 +172,30 @@
     "website": "https://gitopia.com/",
     "image": "https://raw.githubusercontent.com/kj89/testnet_manuals/main/pingpub/logos/gitopia.png",
     "explorerId": "gitopia",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "MUN",
+    "website": "https://mun.money/",
+    "image": "https://raw.githubusercontent.com/vigorousdeveloper/explorer_assets/main/icon.svg?sanitize=true",
+    "explorerId": "mun",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Six Sigma Sports",
+    "website": "https://sixsigmasports.io/",
+    "image": "https://sixsigmasports.io/images/saage-only-logo-mob.svg",
+    "explorerId": "sge",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Source",
+    "website": "https://www.sourceprotocol.io",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.svg",
+    "explorerId": "source",
     "status": "active",
     "type": "mainnet"
   },
@@ -250,7 +274,7 @@
   {
     "name": "Aura Network",
     "website": "https://aura.network/",
-    "image": "https://raw.githubusercontent.com/obajay/explorer/master/logo/Aura.png",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/aura/images/Aura-logo-2.2.svg",
     "explorerId": "aura",
     "status": "active",
     "type": "testnet"
@@ -260,7 +284,7 @@
     "website": "https://www.defund.app/",
     "image": "https://raw.githubusercontent.com/obajay/explorer/master/logo/defund.png",
     "explorerId": "defund",
-    "status": "active",
+    "status": "inactive",
     "type": "testnet"
   },
   {
@@ -276,7 +300,7 @@
     "website": "https://ollostation.zone/",
     "image": "https://raw.githubusercontent.com/obajay/explorer/master/logo/ollo.png",
     "explorerId": "ollo",
-    "status": "active",
+    "status": "inactive",
     "type": "testnet"
   },
   {
@@ -336,10 +360,58 @@
     "type": "testnet"
   },
   {
+    "name": "SAO Beta Network",
+    "website": "https://sao.network/",
+    "image": "https://avatars.githubusercontent.com/u/89438924?s=200&v=4",
+    "explorerId": "sao-beta",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
     "name": "Cascadia",
     "website": "https://cascadia.foundation/",
     "image": "https://avatars.githubusercontent.com/u/98357024?s=200&v=4",
     "explorerId": "cascadia",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Timpi",
+    "website": "https://timpi.io",
+    "image": "https://avatars.githubusercontent.com/u/106469926?s=48&v=4",
+    "explorerId": "timpi",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Entangle",
+    "website": "https://entangle.fi",
+    "image": "https://entangle.fi/images/logo/logo.svg",
+    "explorerId": "entangle",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Six Sigma Sports",
+    "website": "https://sixsigmasports.io",
+    "image": "https://sixsigmasports.io/images/saage-only-logo-mob.svg",
+    "explorerId": "sge",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Elys",
+    "website": "https://elys.network",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/elystestnet/images/elys.png",
+    "explorerId": "elys",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Mantra",
+    "website": "https://www.mantrachain.io",
+    "image": "https://global-uploads.webflow.com/62ed98169164a3b640e4a87c/62f0f7e4d64065eda6d25e0b_mantra-gradient.svg",
+    "explorerId": "mantra",
     "status": "active",
     "type": "testnet"
   }

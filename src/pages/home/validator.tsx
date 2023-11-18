@@ -1,6 +1,3 @@
-import React, { useEffect } from 'react';
-import classNames from 'classnames';
-import { NavLink } from 'react-router-dom';
 
 const item = (network: any, type: string) => {
   const explorerUrl = type === 'mainnet'
@@ -8,16 +5,17 @@ const item = (network: any, type: string) => {
     : 'https://testnet.explorer.tcnetwork.io';
 
   return (
-    <div className='col-md-6 col-lg-6 col-xl-4'>
+    <div className='col-md-6 col-lg-4 col-xl-3'>
       <a href={network.explorerId ? `${explorerUrl}/${network.explorerId}` : ''} target='_blank' rel='noreferrer'>
-        <div className={`card ${network.name.length > 8 ? 'pr-0' : ''}`}>
+        <div className={`card ${network.name.length > 8 ? 'pr-0' : ''}`}
+        >
 
-          <img style={{ marginRight: '10px' }} height={45} width={45} src={network.image} alt='' />
+          <img style={{ marginRight: '10px' }} height={34} width={34} src={network.image} alt='' />
 
           <div className='card-body'>
             <div className='card-title'>
               {network.name}{' '}
-              <span className='dot has-tooltip' data-original-title='null'>
+              {/* <span className='dot has-tooltip' data-original-title='null'>
                 <svg
                   data-v-21c5d077
                   data-v-f322c9fc
@@ -30,7 +28,7 @@ const item = (network: any, type: string) => {
                 >
                   <circle data-v-21c5d077 cx={4} cy={4} r={4} />
                 </svg>
-              </span>
+              </span> */}
             </div>
             <div style={{ fontSize: '12px', lineHeight: 'normal', color: '#6b7280' }}>
               {network.website}

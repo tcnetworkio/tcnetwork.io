@@ -609,7 +609,7 @@ section#portfolio a:hover {
 }
 
 section#portfolio .card {
-  padding: 15px;
+  padding: 12px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -617,7 +617,8 @@ section#portfolio .card {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-color: #e9e8f4;
+  border-color: #f3f4f6;
+  background-color: #f3f4f6;
   border-radius: 10px;
   margin: 10px 0
 }
@@ -644,8 +645,8 @@ section#portfolio .card:hover .card-title,
 section#portfolio .card:hover .status,
 section#portfolio .card:hover .apr {
   color: #fff;
-  -webkit-transition: color .3s;
-  transition: color .3s
+  -webkit-transition: color .1s;
+  transition: color .1s
 }
 
 section#portfolio .card:hover .card-logo {
@@ -661,7 +662,7 @@ section#portfolio .card:hover .status-h {
 }
 
 section#portfolio .card-title {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: .4px;
   color: #F87907;

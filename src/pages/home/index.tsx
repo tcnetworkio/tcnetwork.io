@@ -158,7 +158,7 @@ export const HomePage: FC<any> = (props) => {
           <div className='testnet'>Testnet</div>
           {networks && networks.length && <Validator networks={networks} type='testnet' />}
 
-          <div className='row d-flex align-items-center' style={{ marginTop: '10px' }}>
+          {/* <div className='row d-flex align-items-center' style={{ marginTop: '10px' }}>
             <div className='col-lg-6'>
               <img src={'https://interchainnfts.dev/assets/img/banner.e3623744.png'} width={350} className='d-inline-block align-top' />
             </div>
@@ -172,7 +172,7 @@ export const HomePage: FC<any> = (props) => {
               </p>
               <a href='https://gon.tcnetwork.io' rel='noreferrer' className='btn btn-primary btn-lg'>GoN Explorer</a>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
