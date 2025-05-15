@@ -76,7 +76,7 @@
     "website": "http://www.digchain.org/",
     "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dig/images/dig.png",
     "explorerId": "dig",
-    "status": "active",
+    "status": "inactive",
     "type": "mainnet"
   },
   {
@@ -108,7 +108,7 @@
     "website": "https://idep.network/",
     "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/idep/images/idep.svg",
     "explorerId": "idep",
-    "status": "active",
+    "status": "inactive",
     "type": "mainnet"
   },
   {
@@ -156,7 +156,7 @@
     "website": "https://8ball.info",
     "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/8ball/images/8ball.png",
     "explorerId": "8ball",
-    "status": "active",
+    "status": "inactive",
     "type": "mainnet"
   },
   {
@@ -186,7 +186,7 @@
   {
     "name": "Six Sigma Sports",
     "website": "https://sixsigmasports.io/",
-    "image": "https://sixsigmasports.io/images/saage-only-logo-mob.svg",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png",
     "explorerId": "sge",
     "status": "active",
     "type": "mainnet"
@@ -196,6 +196,30 @@
     "website": "https://www.sourceprotocol.io",
     "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/source/images/source.svg",
     "explorerId": "source",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Zetachain",
+    "website": "https://www.zetachain.com",
+    "image": "https://avatars.githubusercontent.com/u/86979844?s=200&v=4",
+    "explorerId": "zetachain",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Nibiru",
+    "website": "https://nibiru.fi",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/nibiru/images/nibiru.svg",
+    "explorerId": "nibiru",
+    "status": "active",
+    "type": "mainnet"
+  },
+  {
+    "name": "Seda Chain",
+    "website": "https://seda.xyz",
+    "image": "https://sedaprotocol.github.io/test-explorer/logos/seda.png",
+    "explorerId": "seda",
     "status": "active",
     "type": "mainnet"
   },
@@ -356,7 +380,7 @@
     "website": "https://sao.network/",
     "image": "https://avatars.githubusercontent.com/u/89438924?s=200&v=4",
     "explorerId": "sao",
-    "status": "active",
+    "status": "inactive",
     "type": "testnet"
   },
   {
@@ -372,7 +396,7 @@
     "website": "https://cascadia.foundation/",
     "image": "https://avatars.githubusercontent.com/u/98357024?s=200&v=4",
     "explorerId": "cascadia",
-    "status": "active",
+    "status": "inactive",
     "type": "testnet"
   },
   {
@@ -380,7 +404,7 @@
     "website": "https://timpi.io",
     "image": "https://avatars.githubusercontent.com/u/106469926?s=48&v=4",
     "explorerId": "timpi",
-    "status": "active",
+    "status": "inactive",
     "type": "testnet"
   },
   {
@@ -394,7 +418,7 @@
   {
     "name": "Six Sigma Sports",
     "website": "https://sixsigmasports.io",
-    "image": "https://sixsigmasports.io/images/saage-only-logo-mob.svg",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sge/images/sge.png",
     "explorerId": "sge",
     "status": "active",
     "type": "testnet"
@@ -412,6 +436,94 @@
     "website": "https://www.mantrachain.io",
     "image": "https://global-uploads.webflow.com/62ed98169164a3b640e4a87c/62f0f7e4d64065eda6d25e0b_mantra-gradient.svg",
     "explorerId": "mantra",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Entry Point",
+    "website": "https://entrypoint.zone",
+    "image": "https://explorer.entrypoint.zone/logos/entrypoint.png",
+    "explorerId": "entrypoint",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Union",
+    "website": "https://union.build",
+    "image": "https://docs.union.build/img/union-logo.svg",
+    "explorerId": "union",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Swisstronik",
+    "website": "https://www.swisstronik.com",
+    "image": "https://pbs.twimg.com/profile_images/1630871073917894659/LbAxXi_V_400x400.jpg",
+    "file": "swisstronik",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Self Chain",
+    "website": "https://selfchain.xyz",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/selfchaindevnet/images/selfchain.png",
+    "explorerId": "selfchain",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Hedge",
+    "website": "https://hedgeblock.io",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/hedgetestnet/images/hedge.svg",
+    "explorerId": "hedge",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Soar Chain",
+    "website": "https://www.soarchain.com",
+    "image": "https://docs.soarchain.com/img/favicon-96x96.png",
+    "explorerId": "soarchain",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Seda Chain",
+    "website": "https://seda.xyz",
+    "image": "https://sedaprotocol.github.io/test-explorer/logos/seda.png",
+    "explorerId": "seda",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Warden",
+    "website": "https://wardenprotocol.org",
+    "image": "https://warden-explorer.paranorm.pro/logos/warden.svg",
+    "explorerId": "warden",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Aligned Layer",
+    "website": "https://alignedlayer.com",
+    "image": "https://explorer.alignedlayer.com/logos/alignedlayer.png",
+    "explorerId": "alignedlayer",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Zero Gravity",
+    "website": "https://0g.ai",
+    "image": "https://faucet.0g.ai/zg-logo.svg",
+    "explorerId": "og",
+    "status": "active",
+    "type": "testnet"
+  },
+  {
+    "name": "Sunrise",
+    "website": "https://sunriselayer.io/",
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.png",
+    "explorerId": "sunrise",
     "status": "active",
     "type": "testnet"
   }
